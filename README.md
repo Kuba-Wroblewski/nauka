@@ -1,3 +1,1 @@
 # nauka
-# Biuro
-# nauka
