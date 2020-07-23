@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 x = int(input("Proszę podać jakąś liczbę...\n"))
 
-if x <= 20 and x >= 1:
+if (not(x <= 20 and x >= 1)):
     print("Liczba mieści się w naszym zakresie od 1 do 20")
 else:
     print("No trudno liczba nie mieści się w naszym zakresie")
