@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 
 """
-Wyrażenie słownikowe
+Wyrażenie słownikowe "{}" różni się od wyrażenia listowego tym ze
+na początku podajey co ma się stać z kluczem i wartością
+
+Wyrażenie słownikowe to formuła do tworzenia słowników na podstawie innych juz np. list.
 """
 
 names = {"Arkadiusz", "Wioletta", "Karol", "Bartłomiej", "Jakub", "Ania"}

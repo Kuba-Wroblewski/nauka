@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# TYPY ZAGNIEŻDZONE umożliwi nam to zebranie danych np. listy krotki itp w liste lub krotke itp.
+# TYPY ZAGNIEŻDZONE umożliwi nam to zebranie danych np. listy krotki itp. w liste lub krotke itp.
 
 imie = "Arkadiusz"
 wiek = 29

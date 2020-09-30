@@ -1,24 +1,13 @@
 #!/usr/bin/python3
 
 
-imiona = ['kuba', 'wiola', 'arek', 'zenon']
-#            0       1        2       3
-# w 4 elementowej liscie numeracja konczy sie na 3
-
-liczby = [1, 43, -3, 50]
-mieszana = [1, "asd", 42, "kuba"]
-
-print("kuba" in imiona)
-
-if ("zenon" in imiona):
-    print("cześć Zenku")
-
-if 2 in liczby:
-    print("liczba 2 znajduje sie w liscie")
-else:
-    print("Liczba 2 nie znajduje sie w liscie")
-
-print(2 * liczby)
-print(2 * imiona)
-print([3] + imiona)
+from enum import IntEnum
+Menu_Dni_Tygodnia = IntEnum("Menu_Dni_Tygodnia", {"Poniedziałek":20, "Inny_dzien":25})
+wybor = int(input("""\nJaki dziś dzień ?:
+    1. Poniedziałek
+    2. Inny dzień\n"""))
+if wybor == Menu_Dni_Tygodnia.Poniedziałek:
+    print("Może i poniedziałek")
+if wybor == Menu_Dni_Tygodnia.Inny_dzien:
+    print("Inny dzień")
 

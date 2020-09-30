@@ -16,3 +16,10 @@ def pole_trojkata(a, h):
 
 def pole_trapezu(a, b, h):
     return (a + b) / 2 * h
+
+oceny = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+wygenerowana_liczba = [element
+                       for element in range(10, 101)
+                       if element % 5 == 0
+                       if element % 3 != 0]

@@ -10,9 +10,9 @@ print(a)
 x = {1, 4, 5, 6, 8, 8, 8, 8, 20}
 b = {1, 6, 5, 10, 3, 20}
 print(x & b)    # zbiory mają ciekawa funkcje "&" wspólne elementy
-print(x | b)    # wszystkie elementy w x i b w tym samym momencie bez powtórzeń unikalne
-print( x ^ b)   # Alternatywa wykluczająca - wyklucza wspulne wartości po sumie. = (x | b) - ( x & b)
-print(x - b)    # odejmmowanie zbiorów wynikiem jest odjęcie od zbioru x powtarzających sie elementów ze zbioru b
+print(x | b)    # wszystkie elementy w "x" i "b" w tym samym momencie bez powtórzeń unikalne
+print(x ^ b)   # Alternatywa wykluczająca - wyklucza wspólne wartości po sumie. = (x | b) - ( x & b)
+print(x - b)    # odejmmowanie zbiorów wynikiem jest odjęcie od zbioru "x" powtarzających sie elementów ze zbioru "b"
 
 print(x.discard(8)) # usuwa element ze zbioru, jeśli nie ma tego elementu usuwanego to nie wyskoczy błąd
 # print(x.remove(21)) - Wyskoczy błąd ponieważ tego elementu nie ma do usunięcia w zbiorze

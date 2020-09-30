@@ -22,7 +22,7 @@ del(lista[2])
 lista.update({2: "Auto"})
 
 print(lista)
-lista.pop(2)
+lista.pop("kupi")
 print(lista)
 lista.clear()
 print(lista)

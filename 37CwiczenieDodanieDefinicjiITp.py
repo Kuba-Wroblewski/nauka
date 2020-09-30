@@ -13,7 +13,6 @@ while x == 1:
         definicja = input("Podaj definicje: ")
         definicje[klucz] = definicja
         print("Pomyślnie dodana definicja")
-        definicje
         print(definicje,"\n")
 
     elif (wybor == "2"):
@@ -41,3 +40,46 @@ while x == 1:
         x = 0
     else:
         print("Podałes coś z poza zakresu\n")
+
+
+"""
+definicje = {}
+
+while(True):
+
+    print("\n1: Dodaj definicje")
+    print("2: Usuń definicje")
+    print("3: Znajdź definicje")
+    print("4: Pokaż wszystkie definicje")
+    print("5: Zakończ program")
+
+    wybor = input("\nCo chcesz zrobić ?\n")
+
+    if (wybor == "1"):
+        klucz = input("Wprowadz klucz definicji.\n")
+        definicja = input("Wprowadz definicjie.\n")
+        definicje[klucz] = definicja
+    elif (wybor == "2"):
+        klucz = input("Wprowadz definicjie którą chcesz usunąć.\n")
+        if klucz in definicje:
+            del definicje[klucz]
+            print("Poprawnie usuneliśmy definicje: ", klucz)
+        else:
+            print("Podana definicja: ", klucz, "\nNie znajduje się w liscie definicji")
+    elif (wybor == "3"):
+        klucz = input("Wprowadz definicjie której szukasz.\n")
+        if klucz in definicje:
+            print(klucz)
+        else:
+            print("Podana definicja: ", klucz, "\nNie znajduje się w liscie definicji")
+
+
+
+    elif (wybor == "4"):
+        if len(definicje) == 0:
+            print("Nie ma żadnych definicji")
+        else:
+            print("Oto wszystkie definicje: ", definicje)
+    elif (wybor == "5"):
+        break
+"""
