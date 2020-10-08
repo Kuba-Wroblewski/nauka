@@ -1,0 +1,110 @@
+
+j.rafal.wroblewski@gmail.com
+Weronika1985r.
+
+😃️Poniżej krótka pomocna lista koment w GICIE. na początek jak poprzez terminal przenieść,
+pliki z dysku do GIT HUB.
+
+Jak dodać klucz SSH aby nie wpisywać ciągle loginu i hasła przy comedach które tego wymagają:
+1. Tworzysz nowy klucz SSH w git.hubie ( jeśli go nie masz )
+2. Dodanie klucza SSH do konta GitHub ( jesłi tego nie masz )
+ a. JAk bedzie błąd przy dodawaniu klucza to:
+ $ cat ~/.ssh/id_rsa.pub ( to kopiujemy )
+3. Tworząc nowe repozytorium ma sie logować poprzez SSH a nie URL
+https://ipatryk.pl/polaczenie-do-github-przez-ssh/
+https://www.kompikownia.pl/index.php/2019/03/17/logowanie-do-git-github-przy-pomocy-ssh/
+
+
+wiedza z neta:
+https://www.javappa.com/szybki-dostep/git-pierwsze-kroki
+
+Kuba-Wroblewski / Biuro (Private)
+
+Code Issues 0 Pull requests 0 Actions Projects 0 Security 0 Insights
+
+    Settings
+
+😀️QUICK SETUP — IF YOU’VE DONE THIS KIND OF THING BEFORE
+https://github.com/Kuba-Wroblewski/Biuro.git
+
+Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
+
+…OR CREATE A NEW REPOSITORY ON THE COMMAND LINE
+- ABY PRZESŁAĆ NOWE PLIKI DO GIT HUB UŻYWAMY KOMEND Z LISY PONIŻEJ
+
+echo "# Biuro" >> README.md						-używamy za pierwszym razem.
+git init								-używamy za pierwszym razem.
+git add README.md							-używamy za pierwszym razem.
+git commit -m "first commit"
+git remote add origin https://github.com/Kuba-Wroblewski/Biuro.git	-używamy za pierwszym razem.
+git push -u origin master
+
+😀️MOŻEMY TROCHE SKRÓCIĆ TE ŚCIERZKI I NAWET KILKA KOMEND W JEDNEJ LINI NP:
+JAK JUŻ DODAMY I UTWORZYMY TAKI KATALOG O DANEJ NAZWIE JAK REPOZYTORIUM W PC.
+PS. Działa nawet jak przeskakujemy między katalogami.
+
+git add . && git commit -m "first" && git push -u origin master		
+	-Po użyciu komend podstaswowych w nowym katalogu - kopiuje pliki do GIT HUB.
+komenda git add . doda wszsytkie pliki z katalogu w którym jestesmy (lokalnego), możemy dodac sam jeden plik "git add <nazwa pliku>"
+komenda "git commit.." dodaje nam plik do lokalnego repositorium i dodajemy komunikat tłumaczący zmiany.
+komenda "git push-u origin master" przepycha pliki lub plik do remonte repository (git hub)
+na taki branch jaki mu podasz, musi byc ten sam z którego wysyłasz.
+
+
+😥️Jak nam wyskoczy błąd np:  
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Kuba-Wroblewski/Myprojekt.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+ewen:
+To https://github.com/Kuba-Wroblewski/Nauka.git
+ ! [rejected]        test -> test (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Kuba-Wroblewski/Nauka.git'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. Check out this branch and integrate the remote changes
+hint: (e.g. 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+😀️TO ZADZIAŁA NP. DOKŁADNIE TA SAMA KOMENDA Z LEKKĄ ZMIANĄ Z TRYBU:
+"master -> master (fetch first)"-(pobierz pierwszy) na: "master -> master (forced update)"-
+(wymuszony pierwszy)
+ 
+git add . && git commit -m "first" && git push -f origin master
+- Potem możemy już używac zwykłego "-u"
+
+😀️ABY SKASOWAĆ PLIKI Z GIT HUB - NAJPIERW KASUJEMY JE Z KAT. Z SYST. I POTEM POWTARZAMY KOMENDE JAK PRZY DODAWNIU ABY ZAPISAĆ ZMIANY. ( 3 komedy nie mniej )
+
+…OR PUSH AN EXISTING REPOSITORY FROM THE COMMAND LINE
+
+git remote add origin https://github.com/Kuba-Wroblewski/Biuro.git
+git push -u origin master
+
+…or import code from another repository
+
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+Aby zmienic stare repo na SSH:
+https://stackoverflow.com/questions/2432764/how-to-change-the-uri-url-for-a-remote-git-repository
+czyli w pliku w danych folderze git/a w pliku config zmieniamy url na ssh pobrac z innego repo.
+
+kilka koment w samym terminalu poruszanie sie po git:
+https://remarkablemark.org/blog/2016/11/04/copy-files-from-git-branch/
+
+git checkout -b test				= tworzenie nowego brancha o nazwie "test" (lokalnie)
+git checkout test 				= przelogowanie sie na branch "test" (lokalnie)
+git fetch origin master				= robienie migawki z lokalnego do origin master	
+git pull --rebase origin master			= zaciąga pliki z origin master do lokal (czyli dysk)
+git push -u origin test2			= kopiuje branch lokalny (test2) na origin
+git checkout other_branch world.txt		= kopiuje plik (world.txt) do lokalnego other_branch
+git remote					= aby zobaczyć obecnie skonfigurowane serwery
+git clone https://github.com/user-name/Nauka	= clonuje całe repozytorium (Nauka) do aktualnego brancha
+NP. :
+git clone https://github.com/Kuba-Wroblewski/nauka
+git remote -v					= Polecenie wyświetli wszsytkie zdalne repozytoria
+
+
+
+
