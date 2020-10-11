@@ -50,3 +50,4 @@ print(function_performance(suma_liczby3, 500000))
 print(function_performance(suma_liczby4, 500000))
 print(function_performance(suma_liczby5, 500000))
 
+
