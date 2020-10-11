@@ -1,5 +1,12 @@
 #!/usr/bin/python3
 
+"""
+napisz program ktory policzy sumę liczb od 1 do podanej liczby przez uzytkownika
+dla np.5
+1+2+3+4+5
+zwroci
+15
+"""
 import time
 #
 # def suma_liczby():
@@ -10,10 +17,16 @@ import time
 
 def suma_liczby(liczba):
     suma = 0
-
     for liczba in range(1, liczba + 1):
         suma = suma + liczba
     return suma
+
+def suma_liczby1(liczba):
+    wynik = []
+    for element in range(1, liczba + 1):
+        wynik.append(element)
+    return sum(wynik)
+
 # Lista wyrażeniowa
 def suma_liczby2(liczba):
     return sum([liczba for liczba in range(1, liczba + 1)])
@@ -36,6 +49,10 @@ print(suma_liczby(5000000))
 print("PIERWSZY", finish_timer(start))
 
 start = time.perf_counter()
+print(suma_liczby1(5000000))
+print("PIERWSZY 2", finish_timer(start))
+
+start = time.perf_counter()
 print(suma_liczby2(5000000))
 print("DRUGI", finish_timer(start))
 
@@ -50,4 +67,5 @@ print("CZWARTY", finish_timer(start))
 start = time.perf_counter()
 print(suma_liczby5(5000000))
 print("PIĄTY", finish_timer(start))
+
 

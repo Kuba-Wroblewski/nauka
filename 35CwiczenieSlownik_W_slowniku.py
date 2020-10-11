@@ -25,7 +25,6 @@ for id, dictionary in people.items():
         print(key, ":", dictionary[key])
 Powyżej mamy drugą metodę na wypisanie kluczy i wartości, ta metoda jest lepsza i tylko można,
 zastosować "people,items()" w słownikach.
-
 '''
 
 people2 = [
