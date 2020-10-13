@@ -5,23 +5,26 @@ import time
 # jesli sie znajduje funkcja ma zwrócic tak jak sie nie znajduje to ma wyswietlic nie i sprawdz co jest szybsze.
 
 
-def function_performance(func, arg, how_many_times = 1):
+def function_performance(func, how_many_times=1, **arg):
     suma = 0
+    print(arg.get("liczba_szukana"))
+    # print(arg[0])
     for i in range(0, how_many_times):
         start = time.perf_counter()
-        func(arg)
+        func(**arg)
         end = time.perf_counter()
         suma += (end - start)
     return suma
 
-setContainer = {i for i in range(1000)}
-listaContainer = [i for i in range(1000)]
+setContainer = {i for i in range(1000 + 1)}
+listaContainer = [i for i in range(1000 + 1)]
 
-def find_element(liczba_szukana):
-    if liczba_szukana in setContainer:
-        return "Tak"
+def find_element(liczba_szukana, container):
+    if liczba_szukana in container:
+        return True
     else:
-        return "Nie"
+        return False
 
-print(function_performance(find_element, 10, 50000))
-# print(function_performance(find_element, 10, 500000))
+print(function_performance(find_element, 1000, liczba_szukana=10, container=setContainer))
+# print(function_performance(find_element, 1000, 10, setContainer))
+# print(function_performance(find_element, 10, setContainer, how_many_times=1000))
