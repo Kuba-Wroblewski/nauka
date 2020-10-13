@@ -45,19 +45,30 @@ def function_performance(func, arg, how_many_times=20):
         suma += (end - start)
     return suma
 
-def function_performance1(func, arg, how_many_times=20):
-    start = time.perf_counter()
+def function_performance1(func, arg, how_many_times=5):
+    suma = 0
     for i in range(0, how_many_times):
+        start = time.perf_counter()
         func(arg)
         end = time.perf_counter()
-    return (end - start)
+        suma = suma + (end - start)
+    return suma
 
 def show_message(message):
     print(message)
 
-print(function_performance(suma_liczby, 500000, ))
+# print(function_performance(suma_liczby, 500000, ))
 print(function_performance1(suma_liczby, 500000, ))
 # print(function_performance(suma_liczby2, 500000))
 # print(function_performance(suma_liczby3, 500000))
 # print(function_performance(suma_liczby4, 500000))
 # print(function_performance(suma_liczby5, 500000))
+
+
+
+
+
+
+
+
+
