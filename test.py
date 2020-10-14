@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-"""merguj kurwa"""
 
 import time
 # napisz funkcje która będzie sprawdzała czy jakis element znajduje sie w kontenerze.
@@ -12,8 +11,8 @@ def function_performance(func, how_many_times=1, **arg):
     for i in range(0, how_many_times):
         start = time.perf_counter()
         func(**arg)
-        end = time.perf_counter()
-        suma += (end - start)
+
+
     return suma
 
 setContainer = {i for i in range(1000 + 1)}
