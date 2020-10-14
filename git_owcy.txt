@@ -103,6 +103,7 @@ git remote -v					= Polecenie wyświetli wszsytkie zdalne repozytoria
 git branch --move test tost			= zmienia nazwe gałęzi lokalnie z "test" na "tost"
 git push --set-upstream origin tost		= Aby inni mogli zobaczyc poprawiona nowa nazwe
 git fetch					= sciaga i zapisuje zmiany z brancha origin/master
+git push origin files				= wysyła gałąź "files" do repozytorium gita
 	
 jak zmienia ci się coś w gałęzi master i chcesz miec to w innej gałęzi np. test.
 git checkout test & git merge master
