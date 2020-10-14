@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""merguj kurwa"""
 
 print("warga sralga")
 
