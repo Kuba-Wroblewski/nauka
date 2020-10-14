@@ -2,7 +2,7 @@
 
 import time
 # napisz funkcje która będzie sprawdzała czy jakis element znajduje sie w kontenerze.
-# jesli sie znajduje funkcja ma zwrócic tak jak sie nie znajduje to ma wyswietlic nie i sprawdz co jest szybsze.
+# jesli sie znajduje funkcja ma zwrócić tak jak sie nie znajduje to ma wyswietlic nie i sprawdz co jest szybsze.
 
 def function_performance(func, how_many_times=1, **arg):
     suma = 0
