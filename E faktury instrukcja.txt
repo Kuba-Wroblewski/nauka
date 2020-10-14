@@ -1,0 +1,227 @@
+
+
+Biuro Nowa Polska <biuro@nowapolska.com.pl>
+
+https://www.efaktury.org/
+
+ 
+
+Strona logowania: https://www.efaktury.org/konto
+Email logowania: biuro@4u.net.pl
+<http://pocztuj.pl/squirrelmail/src/compose.php?send_to=biuro%404u.net.pl> 
+
+Has³o logowania: b7b76
+
+ 
+
+Wchodzisz w wystaw fakturê, domyœlnie masz ustawiony paragon. Zawsze bêdzie
+Ci siê pokazywa³ nowy numer paragonu wiêc nie musisz go zmieniaæ.
+
+Zmieniasz i dodajesz towar(po ka¿dym zapisaniu faktury dodaje Ci pozycje do
+bazy, raz wpisana nazwa towaru zostaje w bazie), opisz np. Kubek ECO bia³y z
+nadrukiem. Do ka¿dego zamówienia dodajesz pozycje "op³ata za pakowanie i
+wysy³kê" z cen¹ jak¹ ktoœ p³aci za wysy³kê.
+
+Pola Nabywca nie wype³niasz je¿eli ktoœ nie chce faktury(jeœli chce to na
+górze zmieniasz "wystawiany dokument" z paragonu na fakturê.
+
+ 
+
+Na dole zmieniasz sposób p³atnoœci na odpowiedni: zap³acono przelewem/za
+pobraniem / przelew itd.
+
+Je¿eli zap³acono wprowadzasz kwotê jak¹ zap³acono w pozycjê na
+paragonie/fakturze (poni¿ej kwoty Razem)
+
+ 
+
+Na koñcu dajesz zapisz i pobierz. Drukujesz pobrany i wysy³asz mi kopiê na
+adres administracja@4u.net.pl
+
+ 
+
+Pozdrawiam
+
+ 
+
+Marcin Trzciñski
+
+IT Config Sp. z o.o.
+ul. Powstañców 69
+05-870 B³onie
+Nip: 1182085906
+tel. kom. 793 963 462
+
+
+'4U sp. z o.o.
+05-870 B³onie 
+Ul. Bajkowa 33
+NIP 1182123564
+
+Agawa.pl
+95550
+4Unetpl
+
+
+Konto:
+50 2490 0005 0000 4520 9401 3556
+Opiekun klienta DPD 22 577 57 67 dzia³ sprzeda¿y
+8-16
+wsparciesprzedazy@dpd.com.pl
+
+05-870 B³onie
+ul. Nowakowskiego 61 wjazd od ulicy Bajkowej 33
+
+AliExpress
+biuro@4u.net.pl
+Jelinka321
+
+ebay
+4uspolks
+biuro@4u.net.pl
+Jelinka321!
+
+sita wuja toma
+biuro@4u.net.pl
+Jelinka321
+
+F5
+biuro@4u.net.pl
+Jelinka1
+
+adler:
+4unetpl
+Jelinka321
+
+Wfirma.pl
+Jelinka1.
+
+
+http://cloud.itconfig.com.pl/
+rwroblewski
+Kuba1@3$
+
+
+http://www.4u.net.pl/foto/wp-admin/media-new.php
+Nazwa u¿ytkownika lub e-mail
+admin
+Has³o ???? chyba 4unetpl
+
+http://www.4u.net.pl/foto/wp-admin
+admin
+Kuba1!
+
+
+DPD webklient dpd online
+numcad: 184162
+Pañstwa dane dostêpowe:
+Login: mtrzcinski (jest to g³ówny numkad) a ja sie loguje na login szopa !!) 
+Has³o: 08mT4976
+Nowe Has³o: Jelinek1   (to samo na szopa)
+
+widykacja@dpd.com.pl
+
+Olx konto
+login:
+biuro4net@gmail.com	
+Jelinka1
+
+poczta gmail:
+biuro4net@gmail.com
+Weronika1
+
+Sklep Fresh FRESH24
+£¹czniczek Ak 10 
+05-800 Pruszków
+
+Pretashop
+biuro@4u.net.pl
+Ldqanwwaxqxqgs9
+
+Sonet tusze farby do subli okulna 45
+biuro@4u.net.pl
+Jelinka1!
+
+Allegro
+4u_net_pl
+4Unetpl
+
+biuro@4u.net.pl
+4UnetPL
+
+jakub.wroblewski@itconfig.com.pl
+!QAZxsw2
+
+Username:	reklamacje@4u.net.pl
+
+Password:	4UnetPL
+
+Poligrafia
+Zmieni³em haslo do poligrafii
+marcin.trzcinski@itconfig.com.pl
+jelinka1! 
+
+Wordpress
+http://www.4u.net.pl/zdjecia/wp-admin/
+Admin
+Kill19
+
+#slack
+full name:
+Biuro4Unetpl
+
+Display name (optional)
+Biuro4U
+
+Password (required)
+4U.net.pl
+
+lasermax
+login:
+Jakub Wróblewski
+biuro@4u.net.pl
+ITC1!
+
+bilcup
+https://www.puchary-poznan.pl/
+login:
+biuro@4u.net.pl
+haslo:
+Jelinka1
+
+DPD Wa¿ne telefoy i emaile:
+
+Dzia³ opiekunów handlowych:
+22 577 57 67
+
+Windykacja DPD:
+22 548 74 00
+email na którego wysy³aæ potwierdzenai w celu odblokowanai klienta.
+windykacja_abonament@dpd.com.pl
+
+œledzenie paczki DPD:
+https://www.dpd.com.pl/Zlokalizuj-paczke
+
+Email poni¿ej jest do kontaktu z dzia³em opiekunów handlowych
+wsparciesprzedazy@dod.com.pl
+
+email ponizej jest do kontaku aby przes³aæ faktury aby dzia³ fakturowania odpowiedzia³ na pytania
+faktura_abonament@dpd.com.pl
+
+Jak chcemy zam. palete w DPD
+Wybieramy w zak³adce 'Zamów kuriera'
+'Nowe zamówienie'
+cena transport krajowe paleta euro np. kod pocztowy 28-400 to 180 z³ netto do 200kg-300 kg
+na dotarcie po paczke 3-4 dni robocze czas dostawy 3-4 dni robocze.
+
+dhl
+130 netto 2-3 dni robocze auto z wind¹ + 10 z³ netto je¿eli w 2 strony winda
+https://kurierpalety.pl/pl/cennik
+
+sledzenie dpd online:
+https://www.dpd.com.pl/Zlokalizuj-paczke
+
+
+
+
+

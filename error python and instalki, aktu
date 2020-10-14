@@ -1,0 +1,164 @@
+sudo apt-get update && sudo apt-get dist-upgrade
+sudo aptitude update && sudo aptitude upgrade
+
+wchodzenie do repozytorium poprzez nano edytor tekstu:
+sudo nano /etc/apt/sources.list
+lub poprzez vi edytor:
+vi sources.list
+a tu jak sie poruszac po tym:
+https://www.tecmint.com/exit-file-in-vi-vim-editor-in-linux/
+
+
+Aptitude vs. apt-get ( aktualizacje itp. )
+https://ubuntu.pl/czytelnia/2007/08/21/aptitude-vs-apt-get/
+
+9 sposobów na utrzymanie czystości i odchudzenie naszego Ubuntu:
+https://ubuntu.pl/czytelnia/2008/10/12/9-sposobow-na-utrzymanie-czystosci-i-odchudzenie-naszego-ubuntu/
+
+bionic (8) apt-get.8.gz  ( dobraliteratura o apt ...)
+http://manpages.ubuntu.com/manpages/bionic/en/man8/apt-get.8.html
+
+bionic (8) aptitude-curses.8.gz   ( dobra literaruta o aptitude...)
+http://manpages.ubuntu.com/manpages/bionic/pl/man8/aptitude-curses.8.html
+
+Domyślne Repozytoria ubuntu:
+https://linuxporady.pl/domyslne-repozytoria-dla-lubuntu-18-04-lts/
+
+Repozytoria ubuntu forum ubuntu plus dodatki:
+https://ubuntu.pl/forum/viewtopic.php?f=142&t=169868
+
+
+Debian - uniwersalna instalacja/Aktualizacja systemu:
+https://pl.wikibooks.org/wiki/Debian_-_uniwersalna_instalacja/Aktualizacja_systemu
+
+
+wyskakuje nam lista apt:
+sudo gedit /etc/apt/sources.list
+
+Otworzenie listy apt w gnu:
+nano /etc/apt/sources.list
+
+
+Wejscie do rotta:
+su
+
+Błąd wejscia do rotta "su":
+su
+Hasło: 
+su: Uwierzytelnienie się nie powiodło
+
+odp.
+siemka zmień sobie hasło i będzie gitara ;)
+
+zmieniasz komendą
+
+Kod: Zaznacz cały
+
+sudo passwd
+
+i podajesz 3x swoje hasło takie jak do logowania i tyle 
+
+
+
+
+
+instalowanie sterowników grafiki:
+
+Jeżeli instalujemy ze strony nvidia.
+-ląduje nam plik w pobranych.
+-jest to plik którego nie rozpoznaje nasze oprogramowanie ubuntu bo nie ma repetytorium czy cos.
+i trzeba z nim tak postąpić.
+
+Załóżmy, że plik nazywa się program.run
+
+Najpierw zmieniasz dodajesz mu prawa do wykonywania:
+bash-shell
+wchodzi jeszcze przed tym do katalogu pobrane:
+cd /home/kuba/Pobrane
+
+1
+	
+sudo chmod +x ./program.run
+sudo ./program.run
+
+sudo chmod +x ./NVIDIA-Linux-x86_64-440.82.run
+sudo ./NVIDIA-Linux-x86_64-440.82.run
+
+(nie zapomnij o tym aby byc w dobrym miejscu)
+
+potem odpalasz instalator
+bash-shell
+?
+1
+	
+sudo ./program.run
+sudo ./NVIDIA-Linux-x86_64-440.82.run
+
+
+
+executed command
+/tmp/tmp8sgp1ke0pycharm-management/setuptools-39.1.0/setup.py install
+
+error occured
+ModuleNotFoundError: No module named 'distutils.core'
+
+
+command output
+Traceback (most recent call last):
+  File "/tmp/tmp8sgp1ke0pycharm-management/setuptools-39.1.0/setup.py", line 11, in <module>
+    import setuptools
+  File "/tmp/tmp8sgp1ke0pycharm-management/setuptools-39.1.0/setuptools/__init__.py", line 5, in <module>
+    import distutils.core
+ModuleNotFoundError: No module named 'distutils.core'
+
+Problem z odtwarzaniem filmików zwykle po aktualizacji.
+
+Zamknij przeglądarkę,
+Usuń flashplayera:
+sudo apt-get remove --purge flashplugin-nonfree
+
+Zainstaluj flashplayera przy zamkniętej przeglądarce:
+sudo apt-get install ubuntu-restricted-extras
+
+
+Pomogło w systemie Linux ubuntu:
+sudo apt install python3-pip
+ :)
+https://stackoverflow.com/questions/43567996/pycharm-python-packaging-tools-not-found
+https://superuser.com/questions/1319047/cant-install-virtual-interpreter-in-pycharm-in-linux
+
+następny problem to:
+Gtk-Message: 19:32:10.178: Failed to load module "canberra-gtk-module"
+pomogło :
+sudo apt install libcanberra-gtk-module libcanberra-gtk3-module
+
+https://askubuntu.com/questions/342202/failed-to-load-module-canberra-gtk-module-but-already-installed
+
+i następny problem 3-ci
+
+No R interpreter defined: Many R related features like completion, code checking and help won't be available. You can set an interpreter under Preferences->Languages->R
+
+
+
+Następujące pakiety zostały zainstalowane automatycznie i nie są już więcej wymagane:
+  libllvm7 libllvm7:i386 linux-headers-4.15.0-47
+  linux-headers-4.15.0-47-generic linux-image-4.15.0-47-generic
+  linux-modules-4.15.0-47-generic linux-modules-extra-4.15.0-47-generic
+Aby je usunąć należy użyć "sudo apt autoremove".
+
+
+Aptitude vs. apt-get
+https://ubuntu.pl/czytelnia/2007/08/21/aptitude-vs-apt-get/
+
+Problem z uruchamianiem sie systemu czesto pokazywał sie tylko czarny ekran vs nie pojawiał sie na 2 minotorze.
+lightdm doesn't load correctly on Ubuntu 12.10
+https://bugs.launchpad.net/ubuntu/+source/lightdm/+bug/1066410
+
+This apparently fixed the problem for me (at least on the next reboot...):
+
+sudo apt-get remove --purge lightdm
+sudo apt-get install lightdm ubuntu-desktop
+
+Cheers,
+Pierre
+
