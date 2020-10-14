@@ -13,8 +13,8 @@ def function_performance(func, how_many_times=1, **arg):
     for i in range(0, how_many_times):
         start = time.perf_counter()
         func(**arg)
-
-
+        end = time.perf_counter()
+        suma += end - start
     return suma
 
 
