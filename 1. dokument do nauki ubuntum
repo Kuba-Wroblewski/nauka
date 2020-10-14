@@ -1,0 +1,66 @@
+witajcie widzowie
+
+echo 'Dzień dobry' = Komenda echo powtarza nam tekst w cudzysłowiu
+
+Aby odpalić program plik w terminalu. zwykle działa to tak:
+./tutajWpisujeszNazweSwojegoProgramuPliku.py
+Trzeba często odpalić mozliwość jego odpalenia odblokowanie pliku.
+chmod +x ./tutajWpisujeszNazweSwojegoProgramuPliku.py
+jjeśli po odpaleniu programu pojawi się dziwne rzeczy dalej cos nie tak np:
+./test_nauka.py: linia 2: x: nie znaleziono polecenia
+./test_nauka.py: linia 4: błąd składni przy nieoczekiwanym znaczniku `"Cześć Stasiu"'
+./test_nauka.py: linia 4: `    print("Cześć Stasiu")'
+To trzeba w samym pliku napisać gdzie znajduje sie ścieżka do pythona czyli linia shebang
+#!/usr/bin/python3
+
+
+ctr+shift+c  = kopiowanie w terminalu
+ctr+shift+v  = wklejanie w terminalu
+cd  = służy do przeglądania dysku otwieranie różnych ścieżek
+np. cd /home/kuba/Dokumenty  = cd-polecenie, /home-katalog domowy, /kuba-nazwa użytkownika
+ls  = polecenie pokazuje nam co znajduje się w katalogu (pliki katalogi)
+cd ..  = cofa o jeden katalog (jak w dół o jeden)
+cd ~  = cofa przechodzi do katalogu domowego
+cp ~  = kopiowanie katalogów plików z jednej do drugiej ścieżki
+np. cp ~/plik ~/Dokumenty/nic/nic2  = przeniesie nam plik o nazwie plik do katalogu nic2
+cp -R  = kopiuje katalogi z do innej ścieżki
+np. cp -R ~/snap ~/Dokumenty/nic/nic2  = skopiował nam katalog snap do katalogu nic2
+rm   = usuwa pliki
+np. rm plik  = usuneło z katalogu w którym się znajdowaliśmy plik o nazwie plik
+rm -R ~  = usuwa katalogi
+rm -R ~/Dokumenty/nic/nic2/snap  = usunął nam katalog snap(niewazne gdzie jesteś podajesz pelną ścieżke pliku
+mv ~  = przenosi katalogi i pliki
+np. mv ~/plik ~/Dokumenty/nic/nic2/plik  = przeniosło plik o nazwie plik do katalogu nic2
+mv ~  = też można podczas przenoszenia zmieniać nazwe pliku(nakońcu podajesz nazwe zmienioną
+np. mv ~/plik ~/Dokumenty/nic/nic2/plik2  = przenieśliśmy plik o nazwie plik ze zmianą nazwy na plik2
+mkdir  = tworzy nowy katalog
+mrdir  = szybko usuwa katalogi
+np. mkdir nowykatalog
+kuba@LUCJUSZ:~/Dokumenty/nic/nic2$ mkdir nowykatalog  = utworzył nowykatalog (tak gdzie sie znajdujemy)
+sudo su  = włączamy tryb super user :) (aby wyjść z konta administratora wpisujemy exit
+sudo polecenie  = aby wykonac jedno lub kilka w krutkim czasie (i wychodzi z admina)
+sudo apt-get install kadu = Instalowanie aplikacji prosto po przez konsole. Teraz nam zainstaluje program kadu.
+sudo apt-get remove kadu = służy do usuwania np. aplikacji. W tym wypadku usunie nam program kadu.
+sudo apt-get upgrade = instalowanie upgradów w systemie
+update-manager = wywołanie programu do aktualizacji
+xkill = zabija wskazane okno klikając wskazane myszką
+pwd = polecenie które nam mówi gdzie aktualnie się znajdujemy
+in = 'w' czy coś jest np. w danej liście
+else = 'jeśli' w przeciwnym wypadku
+or = 'oraz'
+not = 'nie' negacja
+
+
+endoskop wifi:
+inskam_74ee2a059645
+192,168,1,1
+255,255,255,0
+
+
+
+
+
+
+
+
+
