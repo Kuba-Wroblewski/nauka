@@ -21,7 +21,6 @@ def function_performance(func, how_many_times=1, **arg):
 setContainer = {i for i in range(1000 + 1)}
 listaContainer = [i for i in range(1000 + 1)]
 
-
 def find_element(liczba_szukana, container):
     if liczba_szukana in container:
         return True
