@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+print("warga sralga")
+
 import time
 # napisz funkcje która będzie sprawdzała czy jakis element znajduje sie w kontenerze.
 # jesli sie znajduje funkcja ma zwrócić tak jak sie nie znajduje to ma wyswietlic nie i sprawdz co jest szybsze.
