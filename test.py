@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+<<<<<<< HEAD
 print("warga sralga")
 
 import time
@@ -15,18 +16,16 @@ def function_performance(func, how_many_times=1, **arg):
         func(**arg)
         end = time.perf_counter()
         suma += end - start
+=======
+>>>>>>> update
     return suma
 
 
 setContainer = {i for i in range(1000 + 1)}
 listaContainer = [i for i in range(1000 + 1)]
 
-def find_element(liczba_szukana, container):
-    if liczba_szukana in container:
-        return True
-    else:
-        return False
 
 print(function_performance(find_element, 1000, liczba_szukana=10, container=setContainer))
 # print(function_performance(find_element, 1000, 10, setContainer))
 # print(function_performance(find_element, 10, setContainer, how_many_times=1000))
+
