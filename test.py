@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 print("warga sralga")
-print("warga sralga")
 
 import time
 # napisz funkcje która będzie sprawdzała czy jakis element znajduje sie w kontenerze.
