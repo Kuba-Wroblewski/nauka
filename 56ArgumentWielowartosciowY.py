@@ -9,9 +9,9 @@ listContainer = (i for i in range(10, 100))
 
 def is_element_in(wybór, contener):
     if wybór in contener:
-        return True
+        return True, "Tak"
     else:
-        return False
+        return False, "Nie"
 
 def performance_time(func, how_many_time=1, *arg):
     suma = 0
@@ -25,8 +25,10 @@ def performance_time(func, how_many_time=1, *arg):
 
 print("suma_liczb", performance_time(is_element_in, 500000, wybór, setContainer))
 print("suma_liczb2", performance_time(is_element_in, 500000, wybór, listContainer))
+print(is_element_in(50, setContainer))
+print(is_element_in(5000, listContainer))
 
-""" ARGUMENTY POZYCYJNE (NIENAZWANE) PRZED ARGUMENTAMI NAZWANYMI """
+""" ARGUMENTY POZYCYJNE (NIENAZWANE) ZAWSZE MUSZĄ BYĆ PRZED ARGUMENTAMI NAZWANYMI """
 
 """
 
