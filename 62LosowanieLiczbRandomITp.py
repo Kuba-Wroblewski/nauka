@@ -2,7 +2,8 @@
 
 """
     random - (z ang. losowy) moduł po zaimportowaniu dostarcza nam kilka funkcji
-random 0 <= x < 1 lub [0,1)
+random 0 <= x < 1 lub [0,1) - losuje liczby od 0 do 1, która jest
+    liczbą zmiennoprzecinkową zaczynając 0 nie licząc 1.
     uniform - w tej funkcji jako pierwszy argument przesyłamy początek losowania,
 następnym argumentem jest koniec losowanie np. licząc od 2.5 bez uwzględnienia 10.
     uniform (2.5, 10.0) 2.5<= x <10.0 lub [2.5,10)
