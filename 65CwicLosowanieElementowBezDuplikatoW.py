@@ -39,7 +39,6 @@ karta = cardList.pop()
 lista_kart.append(karta)
 print(lista_kart)
 
-
 """
 Napisz funkcję, która zasymuluje jak działa lotto,
 tzn. wybierze 6 unikalnych liczb z np. 49
@@ -58,7 +57,6 @@ def choose_random_numbers(amount, total_amount):
     print(kontenerekLotto)
 
 choose_random_numbers(0, 49)
-
 
 def choose_random_number(amount, total_amount):
     print(random.sample(range(total_amount + 1), amount))
