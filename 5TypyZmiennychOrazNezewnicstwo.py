@@ -15,3 +15,6 @@ A = 5
 # nazwyzmiennej nie moze nadawac z cyfry, Dużej litery czy tez spacji w nazwie.
 
 
+
+
+

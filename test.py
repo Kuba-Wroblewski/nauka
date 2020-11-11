@@ -2,7 +2,11 @@
 
 import time
 # napisz funkcje która będzie sprawdzała czy jakis element znajduje sie w kontenerze.
+<<<<<<< HEAD
 # jesli sie znajduje funkcja ma zwrócić tak jak sie nie znajduje to ma wyswietlic nie i sprawdz co jest szybsze.
+=======
+# jesli sie znajduje funkcja ma zwrócic tak jak sie nie znajduje to ma wyswietlic nie i sprawdz co jest szybsze.
+>>>>>>> baa7db2ab61137fdd1347179f1db6045a3483573
 
 def function_performance(func, how_many_times=1, **arg):
     suma = 0
@@ -15,6 +19,11 @@ def function_performance(func, how_many_times=1, **arg):
         suma += end - start
     return suma
 
+<<<<<<< HEAD
+=======
+setContainer = {i for i in range(1000 + 1)}
+listaContainer = [i for i in range(1000 + 1)]
+>>>>>>> baa7db2ab61137fdd1347179f1db6045a3483573
 def find_element(liczba_szukana, container):
     if liczba_szukana in container:
         return True
