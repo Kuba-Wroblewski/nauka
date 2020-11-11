@@ -1,5 +1,12 @@
 witajcie widzowie
 
+do czyszczenei linuxa:
+
+sudo apt-get clean
+sudo apt-get autoremove
+
+
+
 echo 'Dzień dobry' = Komenda echo powtarza nam tekst w cudzysłowiu
 
 Aby odpalić program plik w terminalu. zwykle działa to tak:
@@ -14,7 +21,14 @@ To trzeba w samym pliku napisać gdzie znajduje sie ścieżka do pythona czyli l
 #!/usr/bin/python3
 
 
-ctr+shift+c  = kopiowanie w terminalu
+Poniżej wchodzimy do katalogu (test)
+$ cd home/gruby/Desktop/test
+Lub postać równoważną:
+$ cd ~/Desktop/test
+Aby zejśc o jeden katalog w dół wpisujemy:
+$ cd ..
+
+ctr+shift+c 	= kopiowanie w terminalu
 ctr+shift+v  = wklejanie w terminalu
 cd  = służy do przeglądania dysku otwieranie różnych ścieżek
 np. cd /home/kuba/Dokumenty  = cd-polecenie, /home-katalog domowy, /kuba-nazwa użytkownika
@@ -49,6 +63,71 @@ in = 'w' czy coś jest np. w danej liście
 else = 'jeśli' w przeciwnym wypadku
 or = 'oraz'
 not = 'nie' negacja
+
+
+For anaconda:
+Aby aktywować anacode i ja uruchomić:
+w terminalu wpisujemy.
+
+conda activate - przechodzi nam na powłoke ( aktualnie w domu (base))
+conda activate my_env - przechodzi na powłoke (my_env)
+anaconda-navigator - uruchamia navigacje anacondy program
+conda update conda - aby zaktualizować conde
+conda upgrade conda - aby naniesc zmiany
+
+Sprawdź, czy środowisko Anacondy zostało dodane i jest aktywne:
+conda info --envs
+
+Conda wyświetla listę wszystkich środowisk z gwiazdką (*) po nazwie aktywnego środowiska:
+
+# conda environments:
+#
+base                     /home/username/anaconda3
+snakes                *  /home/username/anaconda3/envs/snakes
+snowflakes               /home/username/anaconda3/envs/snowflakes
+
+
+Instalacja flask na ubuntu:
+ dla ubuntu 16.04 and 18.04 powinno być okej.
+1.sprawdza jakiego masz pythona na systemie (definitywnie chcemy miec python3)
+ python3 -V
+2.sprawdza jakie masz packages na systemie  ( i oczywiscie pip3)
+ pip3 -V
+
+jeśli chcemy zainstalować python wpisujemy:
+sudo apt install python
+jeśli chcemy zainstalować python3 wpisujemy:
+sudo apt install python3
+jeśli chcemy zainstalować pip3 wpisujemy:
+sudo apt install python3-pip
+Jak mamy pythona lub pythona3 z pip to
+
+3.tworzymy nowy folder na pulpicie np. http
+ cd Pulpit/
+ mkdir http
+4.instalujemy virtualne środowisko dla pythona w tym konkretnym folderze
+ python3 -m venv venv
+5.musimy teraz aktywować virtualne srodowisko i przejść na nie
+ source venv/bin/activate  (zobaczymy po tym na początku w nawiasie aktywowane środowisko vir.)
+6.sprawdzmy jakie packages mamy zainstalowane w tym środkowisku:
+ pip list
+7.instalujemy Flask:
+ pip install flask
+8.sprawdzmy jaką versie flaska zainstalował:
+ flask --version
+9.sprawdzmy jakie teraz packages ma zainstalowane:
+ pip list
+10.tworzymy nowy folder "demoapp" i wchodzimy w niego:
+ mkdir demoapp
+ cd demoapp
+11.tworzymy python plik np. "app" i odpalamy ją:
+ touch app.py
+ subl .
+
+
+
+
+
 
 
 endoskop wifi:

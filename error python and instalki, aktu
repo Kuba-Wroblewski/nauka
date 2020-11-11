@@ -138,7 +138,15 @@ i następny problem 3-ci
 
 No R interpreter defined: Many R related features like completion, code checking and help won't be available. You can set an interpreter under Preferences->Languages->R
 
-
+18.10.2020
+błąd w momencie dodawanai 2 klucza SSH do gita (dodanie kompa do gita gdzie juz był dodany laptop dell)
+po testowaniu połączenia  
+$ ssh -T git@github.com
+> Hi username! You've successfully authenticated, but GitHub does not
+> provide shell access.
+Naprawi to:
+git remote set-url origin git@github.com:lut/EvolutionApp.git
+git remote set-url origin git@github.com:Kuba-Wroblewski/nauka.git
 
 Następujące pakiety zostały zainstalowane automatycznie i nie są już więcej wymagane:
   libllvm7 libllvm7:i386 linux-headers-4.15.0-47

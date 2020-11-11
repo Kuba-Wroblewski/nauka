@@ -1,4 +1,7 @@
 
+j.rafal.wroblewski@gmail.com
+Weronika1985r.
+
 😃️Poniżej krótka pomocna lista koment w GICIE. na początek jak poprzez terminal przenieść,
 pliki z dysku do GIT HUB.
 
@@ -72,7 +75,8 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 git add . && git commit -m "first" && git push -f origin master
 - Potem możemy już używac zwykłego "-u"
 
-😀️ABY SKASOWAĆ PLIKI Z GIT HUB - NAJPIERW KASUJEMY JE Z KAT. Z SYST. I POTEM POWTARZAMY KOMENDE JAK PRZY DODAWNIU ABY ZAPISAĆ ZMIANY. ( 3 komedy nie mniej )
+😀️ABY SKASOWAĆ PLIKI Z GIT HUB - NAJPIERW KASUJEMY JE Z KAT. Z SYST. I POTEM POWTARZAMY KOMENDE
+JAK PRZY DODAWNIU ABY ZAPISAĆ ZMIANY. ( 3 komedy nie mniej )
 
 …OR PUSH AN EXISTING REPOSITORY FROM THE COMMAND LINE
 
@@ -112,6 +116,6 @@ małe błędy lub git tak ma.
 W momencie edycji pliku w branchu np. test po przelogowaniu się na branch master widze to samo w pliku 
 a to dziwne bo nie powinienem powinienem widziec plik przed modyfikacją
 Ale git infomuje o tym że trzeba zatwierdzić zmiany w momencie przelogowania sie.
-I jak dodamy to add. i commit to po przelogowaniu widzimy już zmiany po i przed itp.		
+I jak dodamy to add. i commit to po przelogowaniu widzimy już zmiany po i przed itp.
 
 
