@@ -1,8 +1,5 @@
-from flask import Flask, render_template, flash, redirect, url_for, session, logging, request
+from flask import Flask, render_template, flash, redirect, url_for, session, logging
 from data import Articles
-
-from wtform import Form, StringField, TextAreaField, PasswordFiels, Valdiators
-from passlib.hash import sha256_crypt
 
 app = Flask(__name__)
 Articles = Articles()
