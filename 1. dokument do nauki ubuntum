@@ -50,7 +50,9 @@ np. mv ~/plik ~/Dokumenty/nic/nic2/plik2  = przenieśliśmy plik o nazwie plik z
 mkdir  = tworzy nowy katalog
 mrdir  = szybko usuwa katalogi
 np. mkdir nowykatalog
+
 kuba@LUCJUSZ:~/Dokumenty/nic/nic2$ mkdir nowykatalog  = utworzył nowykatalog (tak gdzie sie znajdujemy)
+
 sudo su  = włączamy tryb super user :) (aby wyjść z konta administratora wpisujemy exit
 sudo polecenie  = aby wykonac jedno lub kilka w krutkim czasie (i wychodzi z admina)
 sudo apt-get install kadu = Instalowanie aplikacji prosto po przez konsole. Teraz nam zainstaluje program kadu.
@@ -124,9 +126,32 @@ Jak mamy pythona lub pythona3 z pip to
  touch app.py
  subl .
 
+😀️
+HOW TO UNLOCK ROOT USER ON UBUNTU 16: ( root user jest zablokowany bo ma dostep do wszsystkiego all )
+1. Login to your account and open terminal
+sudo passwd root ( podajesz hasło do konta linux, potem ustawiasz nowe hasło do root user i ponawiasz ) 
+2. potem aby wejść do usera: ( wpisujemy )
+cd /
+cd usr
+3. wchodzimy w folder nofiguracyjny
+cd share/lightdm/lightdm.conf.d
+4. wchodzimy w plik configuracyjny
+sudo nano 50-ubuntu.conf
+5. wpisujemy w ostatniej lini:
+greeter-show-manual-login=true
+6. Po restarcei systemu możemy sie logować na nowego użytkownika "root"
+wpisując poprostu jako hasło do normalnego konta nazwe uzytkownika "root"
+hasło znasz. i masz dostep do wszystkiego.
 
-
-
+😀️
+IP Address -per Port Number ubuntu 18 how can i get
+lykaon@Lykaon:~$ sudo netstat -ntlp | grep LISTEN
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      961/systemd-resolve 
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      971/cupsd           
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      1122/mysqld         
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      1125/nginx: master  
+tcp6       0      0 ::1:631                 :::*                    LISTEN      971/cupsd           
+tcp6       0      0 :::80                   :::*                    LISTEN      1125/nginx: master  
 
 
 
