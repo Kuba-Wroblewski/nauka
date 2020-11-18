@@ -5,6 +5,9 @@ do czyszczenei linuxa:
 sudo apt-get clean
 sudo apt-get autoremove
 
+aktualizacje:
+sudo apt-get update && sudo apt-get dist-upgrade
+sudo aptitude update && sudo aptitude upgrade
 
 
 echo 'Dzień dobry' = Komenda echo powtarza nam tekst w cudzysłowiu
@@ -53,7 +56,8 @@ np. mkdir nowykatalog
 
 kuba@LUCJUSZ:~/Dokumenty/nic/nic2$ mkdir nowykatalog  = utworzył nowykatalog (tak gdzie sie znajdujemy)
 
-sudo su  = włączamy tryb super user :) (aby wyjść z konta administratora wpisujemy exit
+sudo su  = włączamy tryb super user :) (aby wyjść z konta administratora wpisujemy exit)
+sudo -s  = włacza tryb root usear aby wyjść wpisujemy exit
 sudo polecenie  = aby wykonac jedno lub kilka w krutkim czasie (i wychodzi z admina)
 sudo apt-get install kadu = Instalowanie aplikacji prosto po przez konsole. Teraz nam zainstaluje program kadu.
 sudo apt-get remove kadu = służy do usuwania np. aplikacji. W tym wypadku usunie nam program kadu.
@@ -143,16 +147,40 @@ greeter-show-manual-login=true
 wpisując poprostu jako hasło do normalnego konta nazwe uzytkownika "root"
 hasło znasz. i masz dostep do wszystkiego.
 
-😀️
-IP Address -per Port Number ubuntu 18 how can i get
-lykaon@Lykaon:~$ sudo netstat -ntlp | grep LISTEN
-tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      961/systemd-resolve 
-tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      971/cupsd           
-tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      1122/mysqld         
-tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      1125/nginx: master  
-tcp6       0      0 ::1:631                 :::*                    LISTEN      971/cupsd           
-tcp6       0      0 :::80                   :::*                    LISTEN      1125/nginx: master  
+Ip adress and port:
+Ip adress to unikalny adress maszyny kiedykolwiek sie połączony do internetu.
+Ale jeśli nie jest połączony z internetem to i tak maszyna ma ip adress = local host.
+Port number to cos jak port usb gdzie chcesz podłączyc dane urządzenie
+Port lepiej podać aby urządzenie wiedziałą gdzie ma sie połączyć.
 
+😀️
+IP Address -per Port Number SSH ubuntu. How can i get
+po pierwsze musisz poznać swój ip adress:
+ ip a
+: 192.168.1.103 ( lub w systemie to jest adres ip laptopa DELL )
+wchodzimy w root: ( po tych komendach na dole pokaże nam otwarte porty )
+ sudo su
+ nmap -sT -O localhost
+Oraz szukamy słuchanego domyślnego portu 22 ( na ogół jest on domyślny do ssh )
+ cat /etc/services | grep 22
+albo odrazu jaki port jest domyślny na tym urządzeniu
+ cat /etc/services | grep ssh
+jest to 22
+Aby otworzyć, aktywować port 22 wpisujemy in root user ( moze byc tak sudo su lub sudo -s )
+ ufw enable  ( ufw status sprawdza jego status )
+https://www.youtube.com/watch?v=WQmLKD06fQI
+Potem aby zainstalować sqlite:
+https://www.linuxcloudvps.com/blog/how-to-install-sqlite-on-ubuntu-16-04/
+po zainstalowaniu sqlite uruchamiamy databases itp.
+https://www.youtube.com/watch?v=n5Ed3DA2sbE
+
+
+
+ 
+How to uninstall SQLite from Ubuntu
+sudo apt-get remove sqlite3
+
+how to find now my actual IP address and the SSH port number in ubuntu
 
 
 endoskop wifi:
