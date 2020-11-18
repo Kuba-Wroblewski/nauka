@@ -32,12 +32,4 @@ def choose_random_number(amount, total_amount):
             kontenerek.append(losa_liczba)
     print(kontenerek)
 
-choose_random_number(0,5)
-
-
-
-
-
-
-
-
+choose_random_number(0, 5)
