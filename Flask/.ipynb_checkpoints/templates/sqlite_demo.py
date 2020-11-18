@@ -11,7 +11,7 @@ c = conn.cursor()
 #     )""")
 
 # c.execute("INSERT INTO employees VALUES ('Mary', 'Shafer', 70000)")
-
+#
 # conn.commit()
 
 c.execute("SELECT * FROM employees WHERE last='Shafer'")
