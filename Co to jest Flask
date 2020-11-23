@@ -1,0 +1,44 @@
+Co to jest Flask ?.
+
+Flask jest to micro framework -(Definiuje on strukturę aplikacji oraz ogólny mechanizm jej działania, a także dostarcza zestaw komponentów i bibliotek ogólnego przeznaczenia do wykonywania określonych zadań) tworzony w pythonie
+
+instalacja flask:
+trzeba stworzyć wirtualne srodowisko np.
+jesteśmy w odpowiedniej lokalizacji. wpisujemy:
+ virtual venv -p python3
+i aktywujemy wirtualne srodowisko
+ source venv/bin/activate
+instalacja flaska ( w tej lokalizacji )
+ pip install flask
+sprawdzanie jakie mamy paczki:
+ pip freeze
+mozemy wejsc do pythona interpretera i uruchomic flaska:
+ python 
+ >>> import flask
+
+tworzymy plik np. app.py z którego będziemy uruchamiać all.
+i możemy w tym pliku wpisywać całą strókture html.
+ @app.route('/')
+ def home():
+     return """ całą struktura html """
+ale było by to niewygodne i brzydko by wyglądało. 
+Więc robimy nowe pliki 
+które wpisujemy w pliku app.py za sekcją from flask import...
+np. jak tworzymy plik o nazwie home.html w katalogu template
+ from flask import Flask, render_template
+ app = Flask(__name__)
+
+ @app.route('/')
+ @app.route('/home')
+ def home():
+     return render_template('home.html')
+
+ @app.route('/about')
+ def about():
+     return '<h1>next page</h1>'
+
+ if __name__ == '__main__':
+     app.run(debug=True)
+
+nauka o flasku turtorial:
+https://www.youtube.com/watch?v=MwZwr5Tvyxo
