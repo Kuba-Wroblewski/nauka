@@ -1,4 +1,5 @@
 from flask import Flask, render_template, url_for
+<<<<<<< HEAD
 from 
 # from datetime import datetime
 
@@ -15,6 +16,10 @@ app = Flask(__name__)
     # def __repr__(self):
     #     return '<Task %r>' % self.id
 
+=======
+
+app = Flask(__name__)
+>>>>>>> cc58aed5be856dfc27283c3471355ab71050972f
 
 @app.route('/')
 def index():
