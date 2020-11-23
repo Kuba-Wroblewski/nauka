@@ -1,5 +1,3 @@
-sqlcmd -S 192.168.1.103 -U sa -P Weronika1
-
 witajcie widzowie
 
 do czyszczenei linuxa:
@@ -10,13 +8,6 @@ sudo apt-get autoremove
 aktualizacje:
 sudo apt-get update && sudo apt-get dist-upgrade
 sudo aptitude update && sudo aptitude upgrade
-
-Aby zalogować sie do wirtualnego środowiska do np. (venv):   ( mamy tam na dell flaska pythona3 itp.)
- source /home/kuba/Pycharm/nauka/venv/bin/activate
-aby wyść wpisujemy:
- deactivate
-reszta wiedzy:
-https://qabrio.pl/wirtualne-srodowiska-w-pythonie/
 
 
 echo 'Dzień dobry' = Komenda echo powtarza nam tekst w cudzysłowiu
@@ -164,7 +155,7 @@ Port lepiej podać aby urządzenie wiedziałą gdzie ma sie połączyć.
 
 😀️
 IP Address -per Port Number SSH ubuntu. How can i get
-po pierwsze musisz poznać swój Ip adress: (IP Adress = localhost )
+po pierwsze musisz poznać swój ip adress:
  ip a
 : 192.168.1.103 ( lub w systemie to jest adres ip laptopa DELL )
 wchodzimy w root: ( po tych komendach na dole pokaże nam otwarte porty )
@@ -184,21 +175,12 @@ po zainstalowaniu sqlite uruchamiamy databases itp.
 https://www.youtube.com/watch?v=n5Ed3DA2sbE
 
 
+
  
 How to uninstall SQLite from Ubuntu
- sudo apt-get remove sqlite3
+sudo apt-get remove sqlite3
 
 how to find now my actual IP address and the SSH port number in ubuntu
-
-
-Aby zainstalować i skonfigurować SQL Server on ubuntu:
-https://www.microsoft.com/en-us/sql-server/developer-get-started/python/ubuntu
-Aby się połączyć z serwerem SQL używamy:
- sqlcmd -S localhost -U sa -P yourpassword
-1> # You're connected! Type your T-SQL statements here. Use the keyword 'GO' to execute each batch of statements.
-Aby sprawdzic połączenie i versie SQL zainstalowaną:
-sqlcmd -S localhost -U sa -P yourpassword -Q "SELECT @@VERSION"
-
 
 
 endoskop wifi:
