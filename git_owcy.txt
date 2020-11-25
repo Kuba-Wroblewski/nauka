@@ -87,13 +87,6 @@ git push -u origin master
 
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 
-😃️
-Jeśli chcesz aby z danej lokalizacji na dysku czyli z lokalnego git usunąc git repository.
-Robimy to tylko jeśli jesteśmy pewni że chcemy usunąć całego git z danej ściezki lokalnego gita.
-bo. np zle go zainicjowaliśmy nie do tego folderu, to wpisujemy komende:
- rm -rf .git
-
-
 Aby zmienic stare repo na SSH:
 https://stackoverflow.com/questions/2432764/how-to-change-the-uri-url-for-a-remote-git-repository
 czyli w pliku w danych folderze git/a w pliku config zmieniamy url na ssh pobrac z innego repo.
@@ -114,7 +107,7 @@ git remote -v					= Polecenie wyświetli wszsytkie zdalne repozytoria
 git branch --move test tost			= zmienia nazwe gałęzi lokalnie z "test" na "tost"
 git push --set-upstream origin tost		= Aby inni mogli zobaczyc poprawiona nowa nazwe
 git fetch					= sciaga i zapisuje zmiany z brancha origin/master
-git push origin files				= wysyła gałąź "files" do repozytorium gita
+git push -u origin files			= wysyła gałąź "files" do repozytorium gita
 	
 jak zmienia ci się coś w gałęzi master i chcesz miec to w innej gałęzi np. test.
 git checkout test & git merge master
