@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "Flask/virtual/bin/python3.7"
+    "python.pythonPath": "Flask/virtual/bin/python3.7",
+    "python.autoComplete.extraPaths": ["./path-to-your-code"],
 }
