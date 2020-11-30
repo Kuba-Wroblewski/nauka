@@ -42,3 +42,14 @@ np. jak tworzymy plik o nazwie home.html w katalogu template
 
 nauka o flasku turtorial:
 https://www.youtube.com/watch?v=MwZwr5Tvyxo
+
+Jaka jest różnica między sqlite3 a sqlalchemy?
+Sqlite to silnik przechowywania bazy danych, który można lepiej porównać z takimi rzeczami, jak MySQL, PostgreSQL, Oracle, MSSQL itp. Służy do przechowywania i pobierania ustrukturyzowanych danych z plików.
+
+SQLAlchemy to biblioteka Pythona, która udostępnia obiekt mapowania relacyjnego (ORM). Robi to, co sugeruje: mapuje twoje bazy danych (tabele itp.) Do obiektów Pythona, dzięki czemu możesz łatwiej i natywnie współdziałać z nimi. SQLAlchemy może być używany z sqlite, MySQL, PostgreSQL itp.
+
+Tak więc ORM zapewnia zestaw narzędzi, które umożliwiają spójną interakcję z modelami baz danych w różnych silnikach baz danych.
+
+SQLAlchemy to ORM, podczas gdy SQLite to oparty na plikach system relacyjnych baz danych. O ile czegoś nie brakuje, nie wiem, jak można rozsądnie porównać te dwa elementy.
+https://stackoverflow.com/questions/5632677/what-is-the-difference-between-sqlite3-and-sqlalchemy
+
