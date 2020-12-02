@@ -3,3 +3,4 @@ venv
 tekst.txt
 .virtual
 .vscode
+__pycache__
