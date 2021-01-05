@@ -1,45 +1,53 @@
 #!/usr/bin/python3
 
 import random
+from enum import Enum
 
-"""
-set nam gwarantuję że się powturzą elementy
-"""
+Event = Enum('Event',['Chest', 'Empty'])
 
-cardList = [ "9", "9", "9", "9",
-             "10", "10", "10", "10",
-             "Jack", "Jack", "Jack", "Jack",
-             "King", "King", "King", "King",
-             "Queen", "Queen", "Queen", "Queen"
-             "Ace", "Ace", "Ace", "Ace",
-             "Joker", "Joker"
-       ]
-
-random.shuffle(cardList)
-print(random.sample(cardList, 5))
-print(random.sample(set(cardList), 5), "\n")
-print(random.sample(set(cardList),5))
-
-"""
-Napisz funkcję, która zasymuluje jak działa lotto,
-tzn. wybierze 6 unikalnych liczb z np. 49
-
-sample - próbka/przykład gwarantuje nam unikalne wartości jeśli wewnątrz takie są.
-"""
+eventDictionary = {
+                    Event.Chest: 0.6,
+                    Event.Empty: 0.4
+                    }
+eventList = list(eventDictionary.keys())
+eventProbility = list(eventDictionary.values())
 
 
+print("Welcome in my game name = BTC_UP")
+print("""You have only 5 steps to be a rich guy :),
+        Don't wory be happy""")
 
-# def choose_random_numbers(amount, total_amount):
-#     box = []
-#     while len(box) < 6:
-#         losowa_liczba = random.randint(amount, total_amount)
-#         if losowa_liczba in box:
-#             continue
-#         else:
-#             box.append(losowa_liczba)
-#     print(box)
-# choose_random_numbers(0, 6)
 
-# def choose_random_numbers(amount, total_amount):
-#     print(random.sample(range(total_amount), 4))
-# choose_random_numbers(0, 6)
+Colours = Enum('Colours', {'Green': 'zielony',
+                        'Orange': 'pomarańczowy',
+                        'Purple': 'fioletowy',
+                        'Gold': 'złoty'
+                        })
+
+chestColoursDictionary = {  Colours.Green :  0.75,
+                            Colours.Orange : 0.2,
+                            Colours.Purple : 0.04,
+                            Colours.Gold : 0.01
+                         }
+
+chestColourList = tuple(chestColoursDictionary.keys())
+chestColourProbability = tuple(chestColoursDictionary.values())
+
+gameLength = 5
+
+while gameLength > 0:
+    gameAnser = input("Do you want to move forward?")
+    if (gameAnser == "yes"):
+        print("Great, let's see what you got...")
+        randomEvent = random.choices(eventList, eventProbility)[0]
+        if (randomEvent == Event.Chest):
+            print("You have win a CHEST")
+            randomChest = random.choices(chestColourList, chestColourProbability)[0]
+            print("The chest color is:", randomChest)
+        elif (randomEvent == Event.Empty):
+            print("Tou have win nothing, you are so unlucky")
+
+    else:
+        print("You can go only forward")
+        continue
+    gameLength -= 1

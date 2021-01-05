@@ -4,40 +4,45 @@ import random
 
 """
 set nam gwarantuję że się powturzą elementy
+
+
+zrob liste która przechowa liste kart jednego i drugiego gracza 
+i aby karty wylosowane dla graczy znikały z całej tali
 """
 
 cardList = [ "9", "9", "9", "9",
              "10", "10", "10", "10",
              "Jack", "Jack", "Jack", "Jack",
              "King", "King", "King", "King",
-             "Queen", "Queen", "Queen", "Queen"
+             "Queen", "Queen", "Queen", "Queen",
              "Ace", "Ace", "Ace", "Ace",
              "Joker", "Joker"
        ]
 
-random.shuffle(cardList)
-print(random.sample(cardList, 5))
-print(random.sample(set(cardList), 5), "\n")
 
+print(len(cardList),'\n')
+def random_list_gamer_1(total_amount):
+    random.shuffle(cardList)
+    karty_gracza_1 = []
+    x = 0
+    print(' Karty Gracza 1 :')
+    while x < 4:
+       x += 1
+       karty_gracza_1 = total_amount.pop()
+       print(karty_gracza_1)
+random_list_gamer_1(cardList)
 
-lista_kart = []
-karta = cardList.pop()
-lista_kart.append(karta)
-karta = cardList.pop()
-lista_kart.append(karta)
-karta = cardList.pop()
-lista_kart.append(karta)
-karta = cardList.pop()
-lista_kart.append(karta)
-karta = cardList.pop()
-lista_kart.append(karta)
-karta = cardList.pop()
-lista_kart.append(karta)
-karta = cardList.pop()
-lista_kart.append(karta)
-karta = cardList.pop()
-lista_kart.append(karta)
-print(lista_kart)
+def random_list_gamer_2(total_amount):
+    random.shuffle(cardList)
+    karty_gracza_2 = []
+    x = 0
+    print('\n Karty Gracza 2 :')
+    while x < 4:
+       x += 1
+       karty_gracza_2 = total_amount.pop()
+       print(karty_gracza_2)
+random_list_gamer_2(cardList)
+print('\n',len(cardList))
 
 
 """
@@ -47,19 +52,18 @@ tzn. wybierze 6 unikalnych liczb z np. 49
 sample - próbka/przykład gwarantuje nam unikalne wartości jeśli wewnątrz takie są.
 """
 
+
 def choose_random_numbers(amount, total_amount):
-    kontenerekLotto = []
-    while len(kontenerekLotto) < 6:
-        losa_liczba = random.randint(amount, total_amount)
-        if losa_liczba in kontenerekLotto:
+    box = []
+    while len(box) < 6:
+        losowa_liczba = random.randint(amount, total_amount)
+        if losowa_liczba in box:
             continue
         else:
-            kontenerekLotto.append(losa_liczba)
-    print(kontenerekLotto)
+            box.append(losowa_liczba)
+    print(box)
+choose_random_numbers(0, 6)
 
-choose_random_numbers(0, 49)
-
-def choose_random_number(amount, total_amount):
-    print(random.sample(range(total_amount + 1), amount))
-
-choose_random_number(6, 49)
+def choose_random_numbers(amount, total_amount):
+    print(random.sample(range(total_amount), 4))
+choose_random_numbers(0, 6)
