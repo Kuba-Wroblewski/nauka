@@ -3,51 +3,37 @@
 import random
 from enum import Enum
 
-Event = Enum('Event',['Chest', 'Empty'])
+Zdarzenie = Enum('Event',['Chest', 'Empty'])
 
-eventDictionary = {
-                    Event.Chest: 0.6,
-                    Event.Empty: 0.4
-                    }
-eventList = list(eventDictionary.keys())
-eventProbility = list(eventDictionary.values())
+słownikZdarzeń = {Zdarzenie.Skrzynia: 0.6, Zdarzenie.Nic: 0.4}
+listaZdarzeń = list(listaZdarzeń.keys())
+prawdopodobneZdarzenia = list(listaZdarzeń.values())
 
+print("Witaj w mojej grze <LABIRYNT>, Masz tylko 5 ruchów, możesz zdobyć pewną nagrode, lub nie")
 
-print("Welcome in my game name = BTC_UP")
-print("""You have only 5 steps to be a rich guy :),
-        Don't wory be happy""")
+Kolor = Enum('Kolory', {'Green': 'zielony', 'Orange': 'pomarańczowy', 'Purple': 'fioletowy', 'Gold': 'złoty'})
+  
+chestColoursDictionary = {Kolor.Green :  0.75, Kolor.Orange : 0.2, Kolor.Purple : 0.04, Kolor.Gold : 0.01}
 
+skrzyniKolorLista = tuple(skrzyniKolorLista.keys())
+skrzyniKolorPrawdopodobieństwo = tuple(skrzyniKolorPrawdopodobieństwo.values())
 
-Colours = Enum('Colours', {'Green': 'zielony',
-                        'Orange': 'pomarańczowy',
-                        'Purple': 'fioletowy',
-                        'Gold': 'złoty'
-                        })
+rewardsForChests = {skrzyniKolorLista[reward]: (reward + 1) * (reward + 1) * 1000
+                    for reward in range(len(skrzyniKolorLista))}
 
-chestColoursDictionary = {  Colours.Green :  0.75,
-                            Colours.Orange : 0.2,
-                            Colours.Purple : 0.04,
-                            Colours.Gold : 0.01
-                         }
+import random
 
-chestColourList = tuple(chestColoursDictionary.keys())
-chestColourProbability = tuple(chestColoursDictionary.values())
+długość_naszej_gry = 5
 
-gameLength = 5
-
-while gameLength > 0:
-    gameAnser = input("Do you want to move forward?")
-    if (gameAnser == "yes"):
-        print("Great, let's see what you got...")
-        randomEvent = random.choices(eventList, eventProbility)[0]
-        if (randomEvent == Event.Chest):
-            print("You have win a CHEST")
-            randomChest = random.choices(chestColourList, chestColourProbability)[0]
-            print("The chest color is:", randomChest)
-        elif (randomEvent == Event.Empty):
-            print("Tou have win nothing, you are so unlucky")
-
+while długość_naszej_gry > 0:
+    odpowieć_gracza = input("Czy chcesz iść do przodu ?")
+    if (odpowieć_gracza == "tak"):
+        print("Wspaniale, zobaczmy co zyskałeś...")
+        random.choices
     else:
-        print("You can go only forward")
+        print("Możesz iść tylko do przodu MEAN 'tak'")
         continue
-    gameLength -= 1
+
+    długość_naszej_gry -= 1
+
+
