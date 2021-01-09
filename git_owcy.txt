@@ -71,7 +71,12 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 😀️TO ZADZIAŁA NP. DOKŁADNIE TA SAMA KOMENDA Z LEKKĄ ZMIANĄ Z TRYBU:
 "master -> master (fetch first)"-(pobierz pierwszy) na: "master -> master (forced update)"-
 (wymuszony pierwszy)
- 
+
+ Jak nam wyskoczy błąd przy próbie logowania do github: Hi Kuba-Wroblewski!
+ You’ve successfully authenticated, but GitHub does not provide shell access.
+I hope this helps and have a great day.
+$git remote set-url origin git@github.com:Kuba-Wroblewski/Nauka.git
+
 git add . && git commit -m "first" && git push -f origin master
 - Potem możemy już używac zwykłego "-u"
 
