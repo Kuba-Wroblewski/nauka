@@ -102,7 +102,8 @@ git push -u origin test2			= kopiuje branch lokalny (test2) na origin
 git checkout other_branch world.txt		= kopiuje plik (world.txt) do lokalnego other_branch
 
 git remote					= aby zobaczyć obecnie skonfigurowane serwery
-git clone https://github.com/user-name/Nauka	= clonuje całe repozytorium (Nauka) do aktualnego brancha
+git clone https://github.com/user-name"Kuba-Wroblewski"/Nauka	= clonuje całe repozytorium (Nauka)
+z Kuba-Wroblewski do aktualnego brancha.
 git remote -v					= Polecenie wyświetli wszsytkie zdalne repozytoria
 git branch --move test tost			= zmienia nazwe gałęzi lokalnie z "test" na "tost"
 git push --set-upstream origin tost		= Aby inni mogli zobaczyc poprawiona nowa nazwe
