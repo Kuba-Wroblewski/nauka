@@ -2,6 +2,7 @@
 j.rafal.wroblewski@gmail.com
 Weronika1985r.
 
+
 😃️Poniżej krótka pomocna lista koment w GICIE. na początek jak poprzez terminal przenieść,
 pliki z dysku do GIT HUB.
 
