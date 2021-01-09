@@ -113,7 +113,7 @@ git push -u origin files			= wysyła gałąź "files" do repozytorium gita
 jak zmienia ci się coś w gałęzi master i chcesz miec to w innej gałęzi np. test.
 git checkout test & git merge master
 
-małe błędy lub git tak ma.
+małe błędy lub git tak ma..
 W momencie edycji pliku w branchu np. test po przelogowaniu się na branch master widze to samo w pliku 
 a to dziwne bo nie powinienem powinienem widziec plik przed modyfikacją
 Ale git infomuje o tym że trzeba zatwierdzić zmiany w momencie przelogowania sie.
