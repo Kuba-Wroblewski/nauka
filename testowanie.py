@@ -2,38 +2,45 @@
 
 import random
 from enum import Enum
-Zdarzenie = Enum('Event',['Skrzynia', 'Nic'])
-słownikZdarzeń = {Zdarzenie.Skrzynia: 0.6, Zdarzenie.Nic: 0.4}
-listaZdarzeń = list(słownikZdarzeń.keys())
-prawdopodobneZdarzenia = list(słownikZdarzeń.values())
-print("Witaj w mojej grze <LABIRYNT>, Masz tylko 5 ruchów, możesz zdobyć pewną nagrode, lub nie")
-Kolor = Enum('Kolory', {'Green': 'zielony', 'Orange': 'pomarańczowy', 'Purple': 'fioletowy', 'Gold': 'złoty'})
-skrzyniKolorSłownik = {Kolor.Green :  0.75, Kolor.Orange : 0.2, Kolor.Purple : 0.04, Kolor.Gold : 0.01}
-skrzyniKolorLista = tuple(skrzyniKolorSłownik.keys())
-skrzyniKolorPrawdopodobieństwo = tuple(skrzyniKolorSłownik.values())
-nagrodaZaSkrzynki = {skrzyniKolorLista[reward]: (reward + 1) * (reward + 1) * 1000
-                    for reward in range(len(skrzyniKolorSłownik))}
+Zdarzenie = Enum('Zdarzenie', ['Skrzynia', 'Nic'])
 
-import random
-zdobyteZłoto = 0
-długość_naszej_gry = 2
+słownikZdarzeń = { Zdarzenie.Skrzynia: 0.6, Zdarzenie.Nic: 0.4}
+zdarzenieLista = list(słownikZdarzeń.keys())
+zdarzeniePrawdopodobne = list(słownikZdarzeń.values())
 
-while długość_naszej_gry > 0:
-    odpowieć_gracza = input("Czy chcesz iść do przodu ?")
-    if (odpowieć_gracza == "tak"):
-        print("Wspaniale, zobaczmy co zyskałeś...")
-        WylosowanyZdarzenie = random.choices(listaZdarzeń, prawdopodobneZdarzenia)[0]
-        if (WylosowanyZdarzenie == Zdarzenie.Skrzynia):
-            print("Wylosowałeś skrzynke")
-            WylosowanaSkrzynia = random.choices(skrzyniKolorLista, skrzyniKolorPrawdopodobieństwo)[0]
-            print("Kolor skrzyni jest:", WylosowanaSkrzynia)
-            nagrodaGracza = nagrodaZaSkrzynki[WylosowanaSkrzynia]
-            zdobyteZłoto += nagrodaGracza
-        elif (listaZdarzeń == Zdarzenie.Nic):
-            print("Nic nie wylosowałeś masz pecha")
+Color = Enum('Color', {'Green': 'Zielony', 'Orange' :'Pomarańczowy',
+                    'Purple': 'Fioletowy', 'Gold': 'Złoty'})
+
+słownikColoruSkrzyni = {Color.Green: 0.75, Color.Orange: 0.2,
+                        Color.Purple: 0.04, Color.Gold: 0.01}                      
+zdarzenieColorLista = list(słownikColoruSkrzyni.keys())
+zdarzenieColorPrawdopodobne = list(słownikColoruSkrzyni.values())
+
+nagrodaZaSkrzynki = { zdarzenieColorLista[nagroda]: (nagroda +1) * (nagroda +1) *1000
+                        for nagroda in range(len(słownikColoruSkrzyni)) }
+
+długośćGry = 5
+złotoZdobyteWgrze = 0
+
+print("""Witaj w mojej grze o nazwie Komnata,
+Masz tylko 5 ruchów do przodu, zobacz na koniec gry ile złota zdobędziesz""")
+
+while długośćGry > 0:
+    graczOdpowiada = input("Czy chcesz iść do przodu?\n")
+    if (graczOdpowiada == "no"):
+        print("Wspaniale, zobaczmy co wygrałeś...\n")
+        wylosowaneZdarzenie = random.choices(zdarzenieLista, zdarzeniePrawdopodobne)[0]
+        if (wylosowaneZdarzenie == Zdarzenie.Skrzynia):
+            print("Gratulacje zdobyłeś skrzynie")
+            WylosowanieColoruSkrzyni = random.choices(zdarzenieColorLista, zdarzenieColorPrawdopodobne)[0]
+            print("Color twojej skrzynki to:", WylosowanieColoruSkrzyni.value)
+            nagrodaWgrze = nagrodaZaSkrzynki[WylosowanieColoruSkrzyni]
+            złotoZdobyteWgrze = złotoZdobyteWgrze + nagrodaWgrze  
+        elif (wylosowaneZdarzenie == Zdarzenie.Nic):
+            print("Masz pecha nic nie zdobyłeś")   
     else:
-        print("Możesz iść tylko do przodu im sorry")
+        print("Niestety możesz iśc tylko do przodu prykro nam") 
         continue
 
-    długość_naszej_gry -= 1
-print("Gratulacje zdobyłes", zdobyteZłoto)
+    długośćGry -= 1
+print("Gratulacje zdobyłes:", złotoZdobyteWgrze)
