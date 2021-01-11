@@ -42,5 +42,6 @@ while długośćGry > 0:
         print("Niestety możesz iśc tylko do przodu prykro nam")
         continue
 
+
     długośćGry -= 1
 print("Gratulacje zdobyłes:", złotoZdobyteWgrze)
