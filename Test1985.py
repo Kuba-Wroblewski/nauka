@@ -14,6 +14,7 @@ wybór = int(input("""Podaj nazwę figury której obwód chcesz wyliczyć ?
             5. Trapezu """ '\n' ))
             
 if wybór == Menu_Figury.Kwadrat:
+   print(Menu_Figury.Kwadrat)
    a = float(input("Wybrałeś Kwadrat, podaj długość jednego z boków\n"))
    print("Pole Kwadratu wynośi:", figury.pole_kwadratu(a))
 elif wybór == Menu_Figury.Prostokąt:

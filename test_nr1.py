@@ -45,20 +45,6 @@ while x < 5:
 4 - Exit the program\n"""))
     x += 1
 
-    def win_or_not():
-        if choice
-
-    if choice == 1:
-        print("tak")
-
-    elif choice == 2:
-        print("kdsadfl")
-    elif choice == 3:
-        print("qweewqqwe")
-    elif choice == 4:
-        print("Exit the program")
-        break
-
 
 
 

@@ -76,7 +76,6 @@ howMuchBoxViolet = piggybank.count(['fioletowa']) * 9000
 howMuchBoxGold = piggybank.count(['złota (legendarna)']) * 16000
 winCash = [howMuchBoxGreen + howMuchBoxOrange + howMuchBoxViolet + howMuchBoxGold]
 
-
 if piggybank != bool:
     print("\nYou Win a Box:")
     print(piggybank)
