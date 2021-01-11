@@ -123,5 +123,3 @@ W momencie edycji pliku w branchu np. test po przelogowaniu się na branch maste
 a to dziwne bo nie powinienem powinienem widziec plik przed modyfikacją
 Ale git infomuje o tym że trzeba zatwierdzić zmiany w momencie przelogowania sie.
 I jak dodamy to add. i commit to po przelogowaniu widzimy już zmiany po i przed itp.
-
-
