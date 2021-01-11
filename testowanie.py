@@ -39,8 +39,9 @@ while długośćGry > 0:
         elif (wylosowaneZdarzenie == Zdarzenie.Nic):
             print("Masz pecha nic nie zdobyłeś")   
     else:
-        print("Niestety możesz iśc tylko do przodu prykro nam") 
+        print("Niestety możesz iśc tylko do przodu prykro nam")
         continue
+
 
     długośćGry -= 1
 print("Gratulacje zdobyłes:", złotoZdobyteWgrze)
