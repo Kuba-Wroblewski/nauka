@@ -2,46 +2,41 @@
 
 import random
 from enum import Enum
-Zdarzenie = Enum('Zdarzenie', ['Skrzynia', 'Nic'])
 
-słownikZdarzeń = { Zdarzenie.Skrzynia: 0.6, Zdarzenie.Nic: 0.4}
-zdarzenieLista = list(słownikZdarzeń.keys())
-zdarzeniePrawdopodobne = list(słownikZdarzeń.values())
 
-Color = Enum('Color', {'Green': 'Zielony', 'Orange' :'Pomarańczowy',
-                    'Purple': 'Fioletowy', 'Gold': 'Złoty'})
+Event = Enum(   'Event', ['cheast', 'nothing'])
+eventDictionery = { Event.cheast: 0.6, Event.nothing: 0.4}
 
-słownikColoruSkrzyni = {Color.Green: 0.75, Color.Orange: 0.2,
-                        Color.Purple: 0.04, Color.Gold: 0.01}                      
-zdarzenieColorLista = list(słownikColoruSkrzyni.keys())
-zdarzenieColorPrawdopodobne = list(słownikColoruSkrzyni.values())
+listEvenDictionery = list(eventDictionery.keys())
+listEventProbability = list(eventDictionery.values())
 
-nagrodaZaSkrzynki = { zdarzenieColorLista[nagroda]: (nagroda +1) * (nagroda +1) *1000
-                        for nagroda in range(len(słownikColoruSkrzyni)) }
+Color = Enum( 'Color', {'zielona': 'green', 'pomaranczowa': 'Orange', 'fioletowa': 'purple', 'zlota': 'Gold'})
+colorDictionery = {Color.zielona: 0.75, Color.pomaranczowa: 0.20, Color.fioletowa: 0.04, Color.zlota: 0.01}
+  
+listColor = list(colorDictionery.keys())
+listColorProbability = list(colorDictionery.values())
 
-długośćGry = 5
-złotoZdobyteWgrze = 0
 
-print("""Witaj w mojej grze o nazwie Komnata,
-Masz tylko 5 ruchów do przodu, zobacz na koniec gry ile złota zdobędziesz""")
+print("Welcome in my game KOMNATA, we will see how many Gold you win in 5 steps only forward.")
+depth = 5
+Gold = 0
 
-while długośćGry > 0:
-    graczOdpowiada = input("Czy chcesz iść do przodu?\n")
-    if (graczOdpowiada == "no"):
-        print("Wspaniale, zobaczmy co wygrałeś...\n")
-        wylosowaneZdarzenie = random.choices(zdarzenieLista, zdarzeniePrawdopodobne)[0]
-        if (wylosowaneZdarzenie == Zdarzenie.Skrzynia):
-            print("Gratulacje zdobyłeś skrzynie")
-            WylosowanieColoruSkrzyni = random.choices(zdarzenieColorLista, zdarzenieColorPrawdopodobne)[0]
-            print("Color twojej skrzynki to:", WylosowanieColoruSkrzyni.value)
-            nagrodaWgrze = nagrodaZaSkrzynki[WylosowanieColoruSkrzyni]
-            złotoZdobyteWgrze = złotoZdobyteWgrze + nagrodaWgrze  
-        elif (wylosowaneZdarzenie == Zdarzenie.Nic):
-            print("Masz pecha nic nie zdobyłeś")   
+while depth > 0:
+    gamersAnser = input("Do you go to forward ?\n")
+    if gamersAnser == "y":
+        print("Exelent i wish you like, let's see what you win...")
+        gamerWin = random.choices(listEvenDictionery, listEventProbability)[0]
+        if gamerWin == Event.cheast:
+            print("You win a cheast")
+            cheastColor = random.choices(listColor, listColorProbability)[0]
+            
+        elif gamerWin == Event.nothing:
+            print("You don't win a cheast, unlucky")
+
+        
     else:
-        print("Niestety możesz iśc tylko do przodu prykro nam")
+        print("in this game you go only forwart, just smal game. Just tab <y>")
         continue
 
-
-    długośćGry -= 1
-print("Gratulacje zdobyłes:", złotoZdobyteWgrze)
+    
+    depth -= 1
