@@ -25,12 +25,13 @@ a = 5
 
 file = open("plik_testowy", "w")   #UCHWYT HANDLE
 file.write("sample\n")
+print(0/0)
 file.write("sample")
 file.close()
 
 file = open("plik_testowy2.txt", "w")   #UCHWYT HANDLE
-file.write("sample\n")
-file.write("sample")
-file.close()
+file.write("sample.2\n")
+file.write("sample.2")
+file.close()  
 
 
