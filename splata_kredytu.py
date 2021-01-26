@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 
-a = 5
 
-open("plik_testowy", "w")
+with open("plik_testowy", "r") as file:
+   file.read

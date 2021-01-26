@@ -12,25 +12,14 @@ file.read().splitlines  - czyta cały plik, wrzuca w liste bez "\n"
 file.readline()         - czyta jedną linie z pliku, gdy dodamy kilka redline każda będzie poprzedzona odstępem
 file.readlines()        - czyta wszsytkie linie, odrazu wrzuci wszystko w liste i zachowa "\n"
 
-"""
-
-
-# with open("plik_testowy", "r") as file:  # UCHWYT ZAPISUJEMY PLIK ABY MOZNA BYLO SIE DO NIEGO PÓŹNIEJ ODWOŁAĆ
-#     Imiona = file.readlines()
-
-# print(Imiona)
-# # print(Imiona[2])
-# # print(file.encoding, "\n")
-
-
-with open("plik_testowy", "r", encoding="UTF-8") as file:  # UCHWYT ZAPISUJEMY PLIK ABY MOZNA BYLO SIE DO NIEGO PÓŹNIEJ ODWOŁAĆ
-    for line in file:
-        print(line)
-
+tell - mówi, gdzie skończyliśmy ostatnią operacje na pliku
+seek - szuka (zmienia) - wskakuje na miejsce wskazanie przez nas 
 
 """
 
-Dla każdej lini w pliku: wypisz linie...
-sam print podobno dodaje od siebie jeden enter
 
-"""
+with open("plik_testowy", "a", encoding="UTF-8") as file:  # UCHWYT ZAPISUJEMY PLIK ABY MOZNA BYLO SIE DO NIEGO PÓŹNIEJ ODWOŁAĆ
+    print(file.tell())
+    file.write("Angelika")
+
+    
