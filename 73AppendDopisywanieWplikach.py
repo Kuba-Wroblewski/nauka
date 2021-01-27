@@ -20,6 +20,6 @@ seek - szuka (zmienia) - wskakuje na miejsce wskazanie przez nas
 
 with open("plik_testowy", "a", encoding="UTF-8") as file:  # UCHWYT ZAPISUJEMY PLIK ABY MOZNA BYLO SIE DO NIEGO PÓŹNIEJ ODWOŁAĆ
     print(file.tell())
-    file.write("Angelika")
+    # file.write("Angelika")
 
     

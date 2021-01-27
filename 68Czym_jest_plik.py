@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
 PLIK - nazwana lokacja, która przechowuje na STAŁE dane na dysku.
-
 RAM - pamięć podręczna komputera, gdzie przechowywane są dane TYMCZASOWO
 
 Operacje na plikach
