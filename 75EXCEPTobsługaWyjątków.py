@@ -21,23 +21,18 @@ zapsywał nazwiska do pliku nazwiska.txt
 ]
 
 """
-
 lista = []
 with open("imionatest.txt", "r") as file:
     for element in file:
         lista.append(tuple(element.split()))
-# print(lista)
 
 with open("imiona.txt", "w") as file:
     for element in lista:
         file.write(element[0] + "\n")
 
-with open("nazwiska.txt", "w") as file:
+with open("nazwisko.txt", "w") as file:
     for element in lista:
         if (len(element) == 2):
             file.write(element[1] + "\n")
         else:
             file.write("\n")
-
-
-
