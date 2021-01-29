@@ -38,3 +38,4 @@ with open("nazwiska.txt", "w") as file:
             file.write(element[1] + "\n")
         else:
             file.write("\n")
+
