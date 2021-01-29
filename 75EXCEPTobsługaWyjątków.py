@@ -26,7 +26,7 @@ lista = []
 with open("imionatest.txt", "r") as file:
     for element in file:
         lista.append(tuple(element.split()))
-# print(lista)
+print(lista)
 
 with open("imiona.txt", "w") as file:
     for element in lista:
@@ -38,6 +38,3 @@ with open("nazwiska.txt", "w") as file:
             file.write(element[1] + "\n")
         else:
             file.write("\n")
-
-
-
