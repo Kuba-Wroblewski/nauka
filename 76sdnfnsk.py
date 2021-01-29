@@ -34,17 +34,8 @@ with open("imiona.txt", "w") as file:
 
 with open("nazwiska.txt", "w") as file:
     for element in lista:
-        try:
-            file.write(element[1] + "\n")
-        except IndexError:
-            file.write("\n")
-
-"""
-# or that way:
-
-    for element in lista:
-        if (len(element == 2):
+        if (len(element) == 2):
             file.write(element[1] + "\n")
         else:
             file.write("\n")
-"""
+
