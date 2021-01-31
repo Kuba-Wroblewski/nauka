@@ -26,7 +26,6 @@ lista = []
 with open("imionatest.txt", "r") as file:
     for element in file:
         lista.append(tuple(element.split()))
-print(lista)
 
 with open("imiona.txt", "w") as file:
     for element in lista:
@@ -34,9 +33,19 @@ with open("imiona.txt", "w") as file:
 
 with open("nazwiska.txt", "w") as file:
     for element in lista:
-        if (len(element) == 2):
+        try:
             file.write(element[1] + "\n")
-        else:
+        except IndexError:   
+# EXCEPT - w przypadku gdy...wystąpi ten błąd INDEXERROR, to..wykonaj i continue.
+# można podawać kilka Except, lub na końcu dodać FINALLY , aby cos wykonać napewno
+            print("Error: Can't find data or read data")
             file.write("\n")
+            
+"""
+Albo obejście bloku z lini (36 - 41) przy pomocy gorszej konstrukcji codu, jak nizej
 
-
+if(len(element) == 2):
+    file.write(element[1] + "\n")
+else:
+    file.write("\n")
+"""
