@@ -22,6 +22,7 @@ def LowandHigh(amount, procent):
     high = amount + (procent / 100) * amount
     return random.randint(low, high)
 
+
 depth = 5
 Gold = 0
 
@@ -46,4 +47,3 @@ if Gold > 0:
     print("\nCongratulation !, In Your 5 step in this game You win:", Gold, "Złota")
 else:
     print("\nUnfortunatly, You dont win anything.")
-
