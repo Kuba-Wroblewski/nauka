@@ -2,10 +2,7 @@
 
 """
 napisz program ktory policzy sumę liczb od 1 do podanej liczby przez uzytkownika
-<<<<<<< HEAD
-=======
 
->>>>>>> c7f9ed5b78ea961bab424488734a5665cb719de7
 dla np.5
 1+2+3+4+5
 zwroci
