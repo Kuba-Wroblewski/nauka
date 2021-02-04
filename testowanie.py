@@ -3,10 +3,10 @@
 import json
 
 people =  {
-        "IcFDG2bO9AYDF651DoyH": {'name': 'John', 'age': 27, 'sex': 'Male'},
+        "IcFDG2bO9AYDF651DoyH": {'name': 'Łukasz', 'age': 27, 'sex': 'Male'},
         "KcD9ntE6IRM59vkVta1k": {'name': 'Marie', 'age': 22, 'sex': 'Female'},
         "yDlgcn99xPc19mYXcRmy": {'name': 'Agness', 'age': 25, 'sex': 'Female'},
-        "cpQh6GiAbBdGv35NDoTk": {'name': 'Nabeel', 'age': 17, 'sex': 'Male'},
+        "cpQh6GiAbBdGv35NDoTk": {'name': 'Łukasz', 'age': 17, 'sex': 'Male'},
         "12BifzWxCQySKgLhgahC": {'name': 'Jasmin ', 'age': 42, 'sex': 'Female'},
         "QLnmg0pzlLj9x7c7DlLv": {'name': 'Ruby', 'age': 55, 'sex': 'Female'},
         "To47urX0DUznWmOxGZ6H": {'name': 'Lori', 'age': 27, 'sex': 'Male'},
@@ -15,17 +15,22 @@ people =  {
         "Vr4wRdkljeEs46Czxo54": {'name': 'Chiara', 'age': 17, 'sex': 'Male'},
          }
 
-codincJson = json.dumps(people)
-print(codincJson)
 
-decoding = json.loads(codincJson, encoding="UTF-8")
-print("\n", decoding)
-
-# with open("plik_dla_json", "w", encoding="UTF-8") as file:
-#     file.write(json.dump(people, file, ensure_ascii=False))
+codingToJson = json.dumps(people, ensure_ascii=False)
+# print(codingToJson)
 
 
 
-with open("plik_dla_json", encoding="UTF-8") as file:
-    wynik = json.load(file)
-print("\n", wynik)
+
+# with open("testowyPlik_json", "w", encoding="UTF-8") as file:
+#     json.dump(codingToJson, file, ensure_ascii=False)
+
+# odczytjson = json.loads(codingToJson)
+# print(odczytjson)
+
+with open("testowyPlik_json", "r") as file:
+    encoding = json.load(file)
+print(encoding)
+
+
+
