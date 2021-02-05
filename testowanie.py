@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import json
+import pprint
 
 people =  {
         "IcFDG2bO9AYDF651DoyH": {'name': 'Łukasz', 'age': 27, 'sex': 'Male'},
@@ -16,18 +17,23 @@ people =  {
          }
 
 # Poniżej zapisane dane do json, w postaci stringa
-# codingJson = json.dumps(people, ensure_ascii=False)
-# print(codingJson, "\n")
+codingJson = json.dumps(people, ensure_ascii=False)
+print(codingJson, "\n")
+
+pprint.pprint(codingJson)
 
 # Odczytane dane z pliku json
-# encoding = json.loads(codingJson)
-# print(encoding)
+encoding = json.loads(codingJson)
+print(encoding)
 
 # Zapisane dane w postaci json do pliku
-# with open("testowyPlik_json", "w", encoding="UTF-8") as file:
-#     json.dump(people, file, ensure_ascii=False)
+with open("testowyPlik_json", "w", encoding="UTF-8") as file:
+    json.dump(people, file, ensure_ascii=False)
 
 # Odczytane dane z pliku json
-# with open("testowyPlik_json", "r") as file:
-#     wynik = json.load(file)
-# print("\n", wynik)
+with open("testowyPlik_json", "r") as file:
+    wynik = json.load(file)
+print(json.dumps(wynik, indent=4, ensure_ascii=False, sort_keys=True))
+
+# Lub pprint aby kod wyglądał ładnie i był łatwy do odczytu
+pprint.pprint(wynik)
