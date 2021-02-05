@@ -15,22 +15,19 @@ people =  {
         "Vr4wRdkljeEs46Czxo54": {'name': 'Chiara', 'age': 17, 'sex': 'Male'},
          }
 
+# Poniżej zapisane dane do json, w postaci stringa
+# codingJson = json.dumps(people, ensure_ascii=False)
+# print(codingJson, "\n")
 
-codingToJson = json.dumps(people, ensure_ascii=False)
-# print(codingToJson)
+# Odczytane dane z pliku json
+# encoding = json.loads(codingJson)
+# print(encoding)
 
-
-
-
+# Zapisane dane w postaci json do pliku
 # with open("testowyPlik_json", "w", encoding="UTF-8") as file:
-#     json.dump(codingToJson, file, ensure_ascii=False)
+#     json.dump(people, file, ensure_ascii=False)
 
-# odczytjson = json.loads(codingToJson)
-# print(odczytjson)
-
-with open("testowyPlik_json", "r") as file:
-    encoding = json.load(file)
-print(encoding)
-
-
-
+# Odczytane dane z pliku json
+# with open("testowyPlik_json", "r") as file:
+#     wynik = json.load(file)
+# print("\n", wynik)
