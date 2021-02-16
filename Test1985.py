@@ -1,18 +1,15 @@
 #!/usr/bin/python3
 
 import requests
+import json
+import pprint
 
-listUrl = [ 'https://flask.palletsprojects.com/en/1.1.x/quickstart/', 'https://github.com/fuck', 'https://www.google.pl/', 'https://www.google.pl/nocos' ]
+response = requests.get('https://jsonplaceholder.typicode.com/todos')
 
-def checkUrl(listUrl):
-    UrlNotFound = []
-    for element in listUrl:
-        response = requests.get(element)
-        print(response, element)
-        if response.status_code == 200:
-            UrlNotFound.append(element)
-            UrlNotFound.append("\n")
-            with open('listNotFoundUrl.txt', 'w') as file:
-                file.writelines(UrlNotFound)
-
-checkUrl(listUrl)
+try:
+    event = response.json()
+except json.JSONDecodeError:
+    print("Niepoprawny format")
+else:
+    print("Wszsytko okej")
+    print(event[0])
