@@ -8,7 +8,6 @@ def checkUrl(listUrl):
     UrlNotFound = []
     for element in listUrl:
         response = requests.get(element)
-        print(response, element)
         if response.status_code == 200:
             UrlNotFound.append(element)
             UrlNotFound.append("\n")
