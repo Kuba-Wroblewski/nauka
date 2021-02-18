@@ -12,7 +12,7 @@ add(c)
 print(c)
 
 
-
+# Przesyłasz wartość 10 do funkcji "add"
 def add(amount=50):
     global c
     c = c + 100 + amount
