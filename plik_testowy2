@@ -1,6 +1,4 @@
-Tak0
-hfg44
-hfgh
-fgh
-fghfg
-Tak[Go, Go, niet]
+a = 15
+
+def bar():
+    print("Hello")
