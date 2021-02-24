@@ -3,7 +3,3 @@ a = 15
 
 def bar():
     print("Hello")
-
-
-
-
