@@ -11,6 +11,7 @@ file.read()             - czyta cały plik zachowuje "\n"
 file.read().splitlines  - czyta cały plik, wrzuca w liste bez "\n"
 file.readline()         - czyta jedną linie z pliku, gdy dodamy kilka redline każda będzie poprzedzona odstępem
 file.readlines()        - czyta wszsytkie linie, odrazu wrzuci wszystko w liste i zachowa "\n"
+print(file.encoding)    - sprawdzanie jakie jest encoding 
 
 """
 

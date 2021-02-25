@@ -19,14 +19,9 @@ def work_url(listaUrl):
 print(list_work_url)
 
 
-
-
 def work_url2(list_work_url):
     with open("work_url.txt", "w") as file:
         file.writelines(list_work_url)
 
 
-
-
 work_url(listaUrl)
-

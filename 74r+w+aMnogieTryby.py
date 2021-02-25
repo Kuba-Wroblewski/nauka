@@ -12,7 +12,7 @@ r+ - do czytania i pisania, nie usunie pliku jesli taki istnieje
 w+ - do pisania i czytania, różni się tym, że usunie zawartość pliku lub stworzy nowy jeśli go nie było
 
 a+ - "wieczny tryb" dopisywania i przy okazji czytania UWAGA! wskaźnik dopisywania jest zawsze na końcu
-jeśli plik nie istaniał stworzy go.
+jeśli plik nie istaniał stworzy go. Wiec jak chcesz go przeczytac postaw sie na pocztek funkcja "seek"
 
 """
 
