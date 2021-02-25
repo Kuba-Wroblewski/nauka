@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
-import requests
-import json
 
+
+file = open("work_url.txt", "w")
+file.write("sample\n")
+file.write("sample")
+file.close()
