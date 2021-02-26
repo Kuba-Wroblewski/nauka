@@ -12,6 +12,7 @@ min ( list ) # Zwraca element o najmniejszej wartosci
 list ( seq ) # Konwertuje krotke ( tuple ) na liste
 
 Metody :
+list.split() # rozdziel po jakims znaku np. spacji
 list . append ( obj ) # Dodaje obiekt obj do listy
 2
 list . count ( obj ) # Zwraca liczbe wystapien obiektu obj w liscie
