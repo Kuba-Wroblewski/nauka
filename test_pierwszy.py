@@ -1,13 +1,18 @@
 #!/usr/bin/python3
 
 
-list_car = ["Ferari", "Audi", "Fiat"]
 
-def my_dream(car):
-    print("Moje marzenie, to mieć w przyszłości takie auto:", car)
-
-
-for car_dream in list_car:
-    my_dream(car_dream)
+# def pole_prostokąta(a, b):
+#     print(a * b)
+#     return a * b
 
 
+# poleProstokata = pole_prostokąta(2, 78)
+# print(5 * pole_prostokąta(5,50))
+
+def dzielenie(a, b):
+    
+    return a / b
+
+
+print(dzielenie(10, 0))
