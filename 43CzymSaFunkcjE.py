@@ -2,9 +2,12 @@
 
 """
     Funkcja - to blok kodu do którgo mozna odwolac sie
-        w kazdej chwili, aby otrzymac pozadany przez nas wynik.
+        w kazdej chwili, aby otrzymac pożądany przez nas wynik.
 
     definition
+
+    funkcja pełni fukcje rozwiazujacy problem w jej nazwie.
+    (Samoopisująca się) - nazwa funkcji powinna odpowiadała temu co ma zrobić
 
 """
 
