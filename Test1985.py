@@ -8,7 +8,7 @@ list_work_url = []
 def work_url(element):
         response = requests.get(element)
         if response.status_code == 200:
-            list_work_url.append(element + "\n")                 
+            list_work_url.append(element + "\n")              
         else:
             print("This page is not avaliable:", element, response)
 
