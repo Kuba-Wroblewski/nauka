@@ -2,17 +2,28 @@
 
 import requests
 
-listaUrl = ['https://flask.palletsprojects.com/en/1.1.x/quickstart/', 'https://github.com/fuck', 'https://www.google.pl/', 'https://www.google.pl/nocos']
+lista_url = ['https://flask.palletsprojects.com/en/1.1.x/quickstart/', 'https://github.com/fuck',
+            'https://www.google.pl/', 'https://www.google.pl/nocos']
 
-list_work_url = []
-def work_url(element):
-        response = requests.get(element)
-        if response.status_code == 200:
-            list_work_url.append(element + "\n")              
+my_work_url = [] # Variable 
+def check_url(urla):  # Method
+    for url in urla:
+        response = requests.get(url)
+        if response.status_code == 200: # Function
+            my_work_url.append(url)  # Variable
+            # my_work_url.append(url + '\n') or this to add another url in new line
         else:
-            print("This page is not avaliable:", element, response)
+            print("This page is not available:", url, response)
 
-for url in listaUrl:
-    work_url(url)
-with open("work_url.txt", "w") as file:
-    file.writelines(list_work_url)
+
+def save_good_url(my_work_url):  # Method
+    with open("work_url.txt", "w") as file:
+        file.writelines(my_work_url)
+
+check_url(lista_url)
+save_good_url(my_work_url)
+
+# for url in lista_url:
+#     check_url(url)
+# with open("work_url.txt", "w") as file:
+#     file.writelines(my_work_url)
