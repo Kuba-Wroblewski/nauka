@@ -18,11 +18,12 @@ def check_url(sample):
         else:
             print("This page is not available:", url, response)
 
-def save_good_url(my_work_url):
+def save_good_url(my_work_url, self):
     
-    with open("work_url.txt", "w") as file:
+    with open(self, "w") as file:
         file.writelines(my_work_url)
 
 check_url(sample_file_url)
-save_good_url(my_work_url)
+save_good_url(my_work_url, 
+input("\nPlease write the name Your file, we put to the file working url\n"))
 
