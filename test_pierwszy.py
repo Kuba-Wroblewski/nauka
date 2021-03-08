@@ -19,7 +19,6 @@ def check_url(sample):
             print("This page is not available:", url, response)
 
 def save_good_url(my_work_url, self):
-    
     with open(self, "w") as file:
         file.writelines(my_work_url)
 
