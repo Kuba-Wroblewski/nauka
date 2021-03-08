@@ -24,5 +24,5 @@ def save_good_url(my_work_url, self):
 
 check_url(sample_file_url)
 save_good_url(my_work_url, 
-input("\nPlease write the name Your file, we put to the file working url\n"))
+input("Please enter the file name You want with working Url...\n"))
 
