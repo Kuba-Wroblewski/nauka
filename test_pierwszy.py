@@ -4,7 +4,7 @@ import requests
 
 # Sample url to test
 sample_file_url = [
-                    'https://flask.palletsprojects.com/en/1.1.x/quickstart/', 'https://github.com/fuck',
+                    'https://flask.palletsprojects.com/en/1.1.x/quickstart/', 'https://github.com/test',
                     'https://www.google.pl/', 'https://www.google.pl/nocos'
                    ]  
 
