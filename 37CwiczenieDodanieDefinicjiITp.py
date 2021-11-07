@@ -83,3 +83,52 @@ while(True):
     elif (wybor == "5"):
         break
 """
+
+
+"""
+# moj program numer 2
+definicje = {}
+
+while True:
+    anser = int(input('''\nWybierz co chcesz zrobić z menu...
+    1. Dodać nową definicje.
+    2. Usunąć dana definicje
+    3. Szukać definicje
+    4. Pokaz wszystkie definicje 
+    5. Exit \n'''))
+
+    if anser == 1:
+        nameOfDefinition = input('Proszę podać nazwe swojej definicji...\n')
+        definitions = input('\nSwietnie\nTeraz proszę podać swoją definicje...\n')
+        definicje.update({nameOfDefinition : definitions})
+        print('Twoja definicja to:', definicje)
+
+    elif anser == 2:
+        if len(definicje) > 0: 
+            delDefiniction = input('\nProszę podać nazwę definicji która chcesz usunąć...\n')
+            print('Usuwamy definicje:', delDefiniction, 
+                '\nI związaną z nia wartość:\n', definicje[delDefiniction])
+            del(definicje[delDefiniction])
+        else:
+            print('Nie masz żadnych definicji, wybierz inna opcje w menu')
+
+    elif anser == 3:
+        if len(definicje) > 0:
+            searchDefinition = input('Proszę wprowadzic szukaną definicje...\n')
+            if searchDefinition not in definicje:
+                print('Szukanej definicji nie ma w definicji, Sprawdz pisownie')
+            else:
+                print('Wartość szukanej definicji to:\n', definicje[searchDefinition])
+        else:
+            print('Nie masz żadnych definicji, wybierz inna opcje z menu')
+
+    elif anser == 4:
+        if len(definicje) <= 0:
+            print('Nie ma żadnej definicji\n', definicje)
+        else:
+            print(definicje)
+
+    elif anser == 5:
+        print('Exit')
+        break
+"""

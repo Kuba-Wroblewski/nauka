@@ -9,7 +9,7 @@
     1+2+3+4+5 = 15
     zwróci 15
 
-"""
+
 import time
 
 def suma_liczby(liczba):
@@ -50,4 +50,15 @@ print(function_performance(suma_liczby3, 500000))
 print(function_performance(suma_liczby4, 500000))
 print(function_performance(suma_liczby5, 500000))
 
+
+"""
+
+def function_performance(func, arg):
+    func(arg)
+
+def show_message(x):
+    print('witam' + x)
+
+
+function_performance(show_message, '5')
 

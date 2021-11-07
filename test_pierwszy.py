@@ -1,28 +1,30 @@
 #!/usr/bin/python3
 
 import requests
+import json
+import webbrowser
+from pprint import pprint
+ 
+print("````Menu````")
+how_much= int(input("Type how much facts you want to see\n"))
+which_animal = str(input("Which animal?\n"))
+ 
+      
+          
+params = {
+    "amount": how_much,
+    "animal_type": which_animal
+}
+ 
+r = requests.get('https://cat-fact.herokuapp.com/facts/random', params)
+ 
+try:
+   content = r.json()
+except json.decoder.JSONDecodeError:
+   print("Niepoprawny format")
+else:
+   for animal in content:
+       print(animal["text"])
+ 
 
-# Sample url to test
-sample_file_url = [
-                    'https://flask.palletsprojects.com/en/1.1.x/quickstart/', 'https://github.com/test',
-                    'https://www.google.pl/', 'https://www.google.pl/nocos'
-                   ]  
-
-my_work_url = [] 
-def check_url(sample):
-    for url in sample:
-        # Check response sample url
-        response = requests.get(url)   
-        if response.status_code == 200: 
-            my_work_url.append(url)
-        else:
-            print("This page is not available:", url, response)
-
-def save_good_url(my_work_url, self):
-    with open(self, "w") as file:
-        file.writelines(my_work_url)
-
-check_url(sample_file_url)
-save_good_url(my_work_url, 
-input("Please enter the file name You want with working Url...\n"))
 

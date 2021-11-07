@@ -46,3 +46,15 @@ def get_keys_with_top_value(my_dict):
 # do której sie odwołujesz w anser
 anser = get_keys_with_top_value(completedTasksFrequencyByUsers)
 print(anser)
+
+
+# SPOSÓB 1
+# znalezienie osoby po imieniu kto otrzymuje ciasteczko
+
+r = requests.get('https://jsonplaceholder.typicode.com/users')
+
+users = r.json()
+for user in users:
+    if user['id'] in useridWithMaxAmountCompletedTasks:
+        print('Imiona osób o najwyższej ilości wykonanych zadań', '\n', user['name'])
+

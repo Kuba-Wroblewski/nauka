@@ -1,39 +1,67 @@
 #!/usr/bin/python3
+import time
 
-import json
-import pprint
 
-people =  {
-        "IcFDG2bO9AYDF651DoyH": {'name': 'Łukasz', 'age': 27, 'sex': 'Male'},
-        "KcD9ntE6IRM59vkVta1k": {'name': 'Marie', 'age': 22, 'sex': 'Female'},
-        "yDlgcn99xPc19mYXcRmy": {'name': 'Agness', 'age': 25, 'sex': 'Female'},
-        "cpQh6GiAbBdGv35NDoTk": {'name': 'Łukasz', 'age': 17, 'sex': 'Male'},
-        "12BifzWxCQySKgLhgahC": {'name': 'Jasmin ', 'age': 42, 'sex': 'Female'},
-        "QLnmg0pzlLj9x7c7DlLv": {'name': 'Ruby', 'age': 55, 'sex': 'Female'},
-        "To47urX0DUznWmOxGZ6H": {'name': 'Lori', 'age': 27, 'sex': 'Male'},
-        "KQ4bir3y4tlkbG69I7zq": {'name': 'Marie', 'age': 42, 'sex': 'Female'},
-        "94cp4hsyZP2BnCh4D34z": {'name': 'Agness', 'age': 25, 'sex': 'Female'},
-        "Vr4wRdkljeEs46Czxo54": {'name': 'Chiara', 'age': 17, 'sex': 'Male'},
-         }
+# napisz program który policzy sume wszystkich liczb od 1 do podanej przez uzytkownika
 
-# Poniżej zapisane dane do json, w postaci stringa
-codingJson = json.dumps(people, ensure_ascii=False)
-print(codingJson, "\n")
+def sumuj_do(liczba):
+    liczbyContener = 0
+    for liczby in range(1, liczba + 1):
+        liczbyContener += liczby
+    return liczbyContener
 
-pprint.pprint(codingJson)
 
-# Odczytane dane z pliku json
-encoding = json.loads(codingJson)
-print(encoding)
+def sumuj_do2(liczba):
+    return sum([
+    liczba
+    for liczba in range(1, liczba + 1)
+    ])
 
-# Zapisane dane w postaci json do pliku
-with open("testowyPlik_json", "w", encoding="UTF-8") as file:
-    json.dump(people, file, ensure_ascii=False)
 
-# Odczytane dane z pliku json
-with open("testowyPlik_json", "r") as file:
-    wynik = json.load(file)
-print(json.dumps(wynik, indent=4, ensure_ascii=False, sort_keys=True))
+def sumuj_do3(liczba):
+    return (1 + liczba) / 2 * liczba
 
-# Lub pprint aby kod wyglądał ładnie i był łatwy do odczytu
-pprint.pprint(wynik)
+# start = time.perf_counter()
+# print(sumuj_do(int(input('\nPrzykład 1,\nPodaj jakąś liczbe dodatnią...'))))
+# stop = time.perf_counter()
+# print(stop - start)
+
+# start = time.perf_counter()
+# print(sumuj_do2(int(input('\nPrzykład 2,\nPodaj jakąś liczbe dodatnią...'))))
+# stop = time.perf_counter()
+# print(stop - start)
+
+# start = time.perf_counter()
+# print(sumuj_do3(int(input('\nPrzykład 3,\nPodaj jakąś liczbe dodatnią...'))))
+# stop = time.perf_counter()
+# print(stop - start)
+
+def function_performance(func, arg, how_many_times=1):
+    sum = 0
+    for i in range(0, how_many_times):
+        start = time.perf_counter()
+        func(arg)
+        stop = time.perf_counter()
+        sum += stop - start
+    return sum
+
+
+def show_mesage(liczba):
+    contener = 0
+    for liczba in range(1, liczba +1):
+        contener += liczba
+    print(contener)
+
+
+# print(function_performance(show_mesage, 1))
+
+# print(function_performance(sumuj_do, 4999999, 5))
+# print(function_performance(sumuj_do2, 4999999, 5))
+# print(function_performance(sumuj_do3, 4999999, 5))
+
+
+def greet(name, message, separator=" "):
+    print(message, name, sep=separator)
+
+greet(name='Kuba', message='Witajcie', separator="\n")
+greet('Just', 'heja')
