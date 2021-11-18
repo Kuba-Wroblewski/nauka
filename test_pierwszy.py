@@ -25,6 +25,5 @@ except json.decoder.JSONDecodeError:
 else:
    for animal in content:
        print(animal["text"])
- 
 
 
