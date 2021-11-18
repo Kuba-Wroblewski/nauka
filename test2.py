@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import time
 
+
 # Wyrażenia listowne
 # wypisz potęge z listy liczb
 '''
