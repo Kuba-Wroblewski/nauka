@@ -2,6 +2,7 @@
 
 # pętla
 
+
 """
 Pętla  (z ang. while to “podczas”, “gdy”)  służy do zapętlania, czyli powtarzania danych instrukcji wielokrotnie. Pętla będzie się wykonywać, dopóki warunek będzie prawdziwy np.
 
