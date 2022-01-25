@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """
+
 >  większe niż
 <  mniejsze niż
 == równy
