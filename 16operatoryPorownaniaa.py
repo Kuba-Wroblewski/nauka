@@ -8,3 +8,4 @@
 >= większy bądź równy
 <= mniejszy bądź równy
 """
+
