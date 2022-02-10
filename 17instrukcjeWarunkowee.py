@@ -27,3 +27,4 @@ elif (wybór == "-" or "-"):
     print(a - b)
 else:
     print("nie wybrałeś żadnego wyboru")
+    
