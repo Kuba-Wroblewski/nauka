@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="webapp" type="PythonConfigurationType" factoryName="Python">
-    <module name="PycharmProject" />
+    <module name="Nauka" />
     <option name="INTERPRETER_OPTIONS" value="" />
     <option name="PARENT_ENVS" value="true" />
     <envs>
