@@ -2,6 +2,7 @@
 import time
 
 
+
 # napisz program który policzy sume wszystkich liczb od 1 do podanej przez uzytkownika
 
 def sumuj_do(liczba):
