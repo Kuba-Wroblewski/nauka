@@ -5,7 +5,7 @@ x = 5; y = 4; z = 3 # poznałeś nowy znak średnik, który informuje pythona gd
 Czyli średniki umożliwiają nam w jendej lini dodawać kilka zmiennych'''
 print(x, y, z)
 
-a,b,c = "lalla", True, 4
+a, b, c = "lalla", True, 4
 
 print(a, b, c)
 

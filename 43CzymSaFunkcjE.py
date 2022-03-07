@@ -8,13 +8,14 @@
 
     funkcja pełni fukcje rozwiazujacy problem w jej nazwie.
     (Samoopisująca się) - nazwa funkcji powinna odpowiadała temu co ma zrobić
-
 """
 
-def wiadomosć_powitalna(imie):
-    print("Cześć ",imie,", miło mi powitać Cię w moim programie!")
+
+def wiadomosc_powitalna(imie):
+    print("Cześć ", imie, ", miło mi powitać Cię w moim programie!")
+
 
 imiona = ["Arku", "Wiolu", "Bartku"]
 
 for imie in imiona:
-    wiadomosć_powitalna(imie)
+    wiadomosc_powitalna(imie)

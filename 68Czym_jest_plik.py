@@ -22,15 +22,13 @@ klikając na plik 2 razy zostaje uruchomiony plik i akcja która jest w nim zawa
 
 a = 5
 
-file = open("plik_testowy", "w")   #UCHWYT HANDLE
+file = open("plik_testowy", "w")  # UCHWYT HANDLE
 file.write("sample\n")
-print(0/0)
+print(0 / 0)
 file.write("sample")
 file.close()
 
-file = open("plik_testowy2.txt", "w")   #UCHWYT HANDLE
+file = open("plik_testowy2.txt", "w")  # UCHWYT HANDLE
 file.write("sample.2\n")
 file.write("sample.2")
-file.close()  
-
-
+file.close()

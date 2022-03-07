@@ -3,7 +3,7 @@
 import figury
 # Enumeration - spis - wyliczenie
 from enum import IntEnum
-Menu_Figury = IntEnum("Menu_Figury", "Kwadrat Prostokąt Koło Trójkąt Trapez Koniec")
+Menu_Figury = IntEnum("Menu_Figury", "Kwadrat Prostokat Kolo Trojkat Trapez Koniec")
 
 while True:
     odpowiedz = float(input("""\nCo chcesz zrobic...?\n
@@ -18,16 +18,16 @@ while True:
         a = float(input("Prosze podać długość jednego z boków kwadratu\n"))
         print("Pole kwadratu wynosi", figury.pole_kwadratu(a))
 
-    elif odpowiedz == Menu_Figury.Prostokąt:
+    elif odpowiedz == Menu_Figury.Prostokat:
         a = float(input("Prosze podać długość jednego z boków prostokąta\n"))
         b = float(input("Prosze podać długość drugiego z boków prostokąta\n"))
         print("Pole prostokątu wynosi", figury.pole_prostokata(a, b))
 
-    elif odpowiedz == Menu_Figury.Koło:
+    elif odpowiedz == Menu_Figury.Kolo:
         r = float(input("Prosze podać promień koła\n"))
         print("Pole koła wynośi", figury.pole_kola(r))
 
-    elif odpowiedz == Menu_Figury.Trójkąt:
+    elif odpowiedz == Menu_Figury.Trojkat:
         a = float(input("Prosze podać bok trójkąta\n"))
         h = float(input("Prosze podać wysokość trójkąta\n"))
         print("Pole trójkąta wynosi", figury.pole_trojkata(a, h))

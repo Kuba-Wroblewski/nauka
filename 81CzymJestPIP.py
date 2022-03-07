@@ -8,7 +8,6 @@ PyPi - Python Package index - index (spis) pakunków do Pythona
 
 """
 
-
 response = requests.get("https://flask.palletsprojects.com/en/1.1.x/quickstart/")
 response.status_code
 

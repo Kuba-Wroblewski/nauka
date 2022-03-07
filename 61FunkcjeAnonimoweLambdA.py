@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+
 def funkcjaLambda(x):
     if x % 2 == 0:
         return x
+
 
 myList = [2, 14, 22, 7, 6, 4, 5, 17]
 

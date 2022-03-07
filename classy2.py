@@ -7,12 +7,14 @@ class Person():
         self.nazwisko = 'Kwiatkowski'
         self.age = 25
 
+
 class Employee(Person):
 
     def __init__(self, position):
         super().__init__('Tomek')
         self.posiotion = position
         self.specjalization = 'Python'
+
 
 class Client(Person):
 
@@ -36,5 +38,3 @@ print(klient.ordered)
 klient2 = Client('Weronika')
 print(klient2.name)
 print(klient2.ordered)
-
-

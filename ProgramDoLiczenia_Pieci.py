@@ -4,7 +4,6 @@ print("Hello Piecia...")
 
 x = input()
 
-
 print("Jestem Twoim długo oczekiwanym programem do liczenia czego tam chcesz")
 
 print("Jak się dzis czujesz ?")
@@ -24,15 +23,11 @@ print("874824532232466155L")
 print("Proszę wprowadzić do systemu potwierdzenie przelewu")
 print("Potwierdzenie przelewu jest to wypisanie mojego portfela LSK")
 
-
-
 input()
 x = x * 1.234
-
 
 print("Dziekujemy za wpłatę :)")
 print("Oto twój wypracowany następny rok 2019.")
 print(x)
-
 
 print("Dziekujemy za wspołprace Panie Piotrze")

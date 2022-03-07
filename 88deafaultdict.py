@@ -7,13 +7,15 @@ from collections import defaultdict
 
 r = requests.get('https://jsonplaceholder.typicode.com/todos')
 
+
 def count_task_frequency(tasks):
     completedTasksFrequencyByUsers = defaultdict(int)
     for entry in tasks:
         if entry['completed'] == True:
-                completedTasksFrequencyByUsers[entry['userId']] += 1
-    
+            completedTasksFrequencyByUsers[entry['userId']] += 1
+
     return completedTasksFrequencyByUsers
+
 
 def get_users_with_top_tasks(completedTasksFrequencyByUsers):
     useridWithMaxAmountCompletedTasks = []
@@ -24,6 +26,7 @@ def get_users_with_top_tasks(completedTasksFrequencyByUsers):
 
     return useridWithMaxAmountCompletedTasks
 
+
 try:
     tasks = r.json()
 except json.decoder.decoder.JSONDecodeError:
@@ -32,16 +35,18 @@ else:
     completedTasksFrequencyByUsers = count_task_frequency(tasks)
     useridWithMaxAmountCompletedTasks = get_users_with_top_tasks(completedTasksFrequencyByUsers)
     print('ID uzytkowników o najwyzszej ilosci wykonanych zadań:', useridWithMaxAmountCompletedTasks)
-    
+
+
 # definicja wyciagania najwiekszej wartości z podanej listy może się przyda
 def get_keys_with_top_value(my_dict):
     return [
-    key
-    for key, value in my_dict.items()
-    if value == max(my_dict.values())
+        key
+        for key, value in my_dict.items()
+        if value == max(my_dict.values())
     ]
 
-# aby zadziałało wywołanie definicji (wyniku) musi być poniżej wywołania definicji 
+
+# aby zadziałało wywołanie definicji (wyniku) musi być poniżej wywołania definicji
 # do której sie odwołujesz w anser
 anser = get_keys_with_top_value(completedTasksFrequencyByUsers)
 print(anser)
@@ -66,6 +71,8 @@ for userId in useridWithMaxAmountCompletedTasks:
 
     print('Wręczamy ciasteczko mistrzunia osoba o imieniu:', '\n', user[0]['name'])
 '''
+
+
 # sposób 3
 # chcemy pobrac 2 rekordy jednoczesnie uzywamy koniunkcji (&)
 # zmieni liste w konstraction połączenie parametrów do połączenia
@@ -84,13 +91,14 @@ def change_list_of_conj_param(my_list, key='id'):
 
     return conj_param
 
+
 # conj_param = change_list_of_conj_param(useridWithMaxAmountCompletedTasks, 'id')
-conj_param = change_list_of_conj_param([2,7,1])
+conj_param = change_list_of_conj_param([2, 7, 1])
 
 r = requests.get('https://jsonplaceholder.typicode.com/users', params=conj_param)
 
 users = r.json()
 
 for user in users:
-    print('Wręczamy ciasteczko mistrzunia osobie o imieniu:', 
-    '\n', user['name'], 'O ID:', user['id'])
+    print('Wręczamy ciasteczko mistrzunia osobie o imieniu:',
+          '\n', user['name'], 'O ID:', user['id'])

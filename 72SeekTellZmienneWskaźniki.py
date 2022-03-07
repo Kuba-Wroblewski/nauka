@@ -17,10 +17,10 @@ seek - szuka (zmienia) - wskakuje na miejsce wskazanie przez nas
 
 """
 
-
-with open("plik_testowy", "r", encoding="UTF-8") as file:  # UCHWYT ZAPISUJEMY PLIK ABY MOZNA BYLO SIE DO NIEGO PÓŹNIEJ ODWOŁAĆ
+# UCHWYT ZAPISUJEMY PLIK ABY MOZNA BYLO SIE DO NIEGO PÓŹNIEJ ODWOŁAĆ
+with open("plik_testowy", "r", encoding="UTF-8") as file:
     print(file.readline())
-    print(file.tell())  
+    print(file.tell())
     print(file.readline())
     print(file.tell())
     file.seek(4)

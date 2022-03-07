@@ -15,8 +15,8 @@ print(file.encoding)    - sprawdzanie jakie jest encoding
 
 """
 
-
-# with open("plik_testowy", "r") as file:  # UCHWYT ZAPISUJEMY PLIK ABY MOZNA BYLO SIE DO NIEGO PÓŹNIEJ ODWOŁAĆ
+# UCHWYT ZAPISUJEMY PLIK ABY MOZNA BYLO SIE DO NIEGO PÓŹNIEJ ODWOŁAĆ
+# with open("plik_testowy", "r") as file:
 #     Imiona = file.readlines()
 
 # print(Imiona)
@@ -24,10 +24,10 @@ print(file.encoding)    - sprawdzanie jakie jest encoding
 # # print(file.encoding, "\n")
 
 
-with open("plik_testowy", "r", encoding="UTF-8") as file:  # UCHWYT ZAPISUJEMY PLIK ABY MOZNA BYLO SIE DO NIEGO PÓŹNIEJ ODWOŁAĆ
+# UCHWYT ZAPISUJEMY PLIK ABY MOZNA BYLO SIE DO NIEGO PÓŹNIEJ ODWOŁAĆ
+with open("plik_testowy", "r", encoding="UTF-8") as file:
     for line in file:
         print(line)
-
 
 """
 

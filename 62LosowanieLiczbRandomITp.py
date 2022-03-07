@@ -19,12 +19,15 @@ randint - przyjmuje pełną podaną wartość np. od 0 do 4 włącznie  np.
 
 import random
 
+
 def will_weapon_hit(weaponChanceToHitPerception):
     isHitChance = random.uniform(0, 100)
     if (isHitChance < weaponChanceToHitPerception):
         return "hit"
     else:
         return "not hit"
+
+
 x = 0
 listHit = []
 while x < 1000:
@@ -44,11 +47,4 @@ x = 0
 
 while x < 10:
     x = x + 1
-    print(random.randint(0,10))
-
-
-
-
-
-
-
+    print(random.randint(0, 10))

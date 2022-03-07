@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 
 
-
 wynik = 0
 i = 0
 while i < 3:
-    x = int(input("Prosze podać liczbe dodatnią i parzystą: "))
+    x = int(input("Prosze podać liczbe dodatnią parzystą, dodamy kolejno 3 cyfry: "))
     if (x > 0 and x % 2 == 0):
         wynik += x
     else:
@@ -13,4 +12,3 @@ while i < 3:
         continue
     i += 1
 print("Wynik sumy 3 kolejnych dodatnich parzystych cyfr to: ", wynik)
-

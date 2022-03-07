@@ -5,16 +5,21 @@
     None - nic - false
 """
 
-def pole_prostokąta(a, b):
+
+def pole_prostokata(a, b):
     print(a * b)
+
 
 # pole_prostokąta(2, 4)
 
-def pole_prostokąta(a, b):
+def pole_prostokata(a, b):
     return a * b
 
-pole_prostokątaA = pole_prostokąta(2, 4)
-pole_prostokątaB = pole_prostokąta(20, 14)
+
+pole_prostokataA = pole_prostokata(2, 4)
+pole_prostokataB = pole_prostokata(20, 14)
+
+
 # print(5 * pole_prostokątaA)
 # print(5 * pole_prostokątaB)
 
@@ -23,5 +28,6 @@ def dzielenie(a, b):
         return
     print("test")
     return a / b
+
 
 print(dzielenie(10, 1))

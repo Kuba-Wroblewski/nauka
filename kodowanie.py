@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-import random; from collections import Counter
+import random;
+from collections import Counter
 
 movieList = ["Tytuł1", "Tytuł2", "Tytuł3", "Tytuł4"]
 nagrodaZeSkrzynki = ["zielona", "pomarańczowa", "purpurowa", "legendarna"]
@@ -12,14 +13,14 @@ nagrodaZeSkrzynki = ["zielona", "pomarańczowa", "purpurowa", "legendarna"]
 
 # print(Counter(random.choices(nagrodaZeSkrzynki, [80, 15, 4, 1], k=100)))
 
-cardList = [ "9", "9", "9", "9",
-             "10", "10", "10", "10",
-             "Jack", "Jack", "Jack", "Jack",
-             "King", "King", "King", "King",
-             "Queen", "Queen", "Queen", "Queen"
-             "Ace", "Ace", "Ace", "Ace",
-             "Joker", "Joker"
-       ]
+cardList = ["9", "9", "9", "9",
+            "10", "10", "10", "10",
+            "Jack", "Jack", "Jack", "Jack",
+            "King", "King", "King", "King",
+            "Queen", "Queen", "Queen", "Queen"
+                                       "Ace", "Ace", "Ace", "Ace",
+            "Joker", "Joker"
+            ]
 
 
 def choose_random_number(amount, total_amount):
@@ -31,5 +32,6 @@ def choose_random_number(amount, total_amount):
         else:
             kontenerek.append(losa_liczba)
     print(kontenerek)
+
 
 choose_random_number(0, 5)

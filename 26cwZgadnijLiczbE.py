@@ -11,9 +11,8 @@ while (szukanaLiczba != 49):
     elif (x < 50):
         print("Podana liczba jest za mała, spróbuj jeszcze raz")
     else:
-        print("Brawo nasza liczba to:",szukanaLiczba)
+        print("Brawo nasza liczba to:", szukanaLiczba)
         break
-
 
 """
 # Przykłąd zrobiony przez trenera

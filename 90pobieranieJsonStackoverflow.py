@@ -2,6 +2,7 @@
 import requests
 import json
 import pprint
+
 '''
 API - Aplication Programming Interface 
 (interface to jest cos co widzisz mozesz z tego kozystac i nie wiesz jak działa)
@@ -16,15 +17,14 @@ Face - twarz
 # kategoria python
 
 params = {
-    'site' : 'stackoverflow',
-    'sort' : 'votes',
-    'order' : 'desc',
-    'fromdate' : '2021-09-06',
-    'tagged' : 'python',
-    'min' : 6
+    'site': 'stackoverflow',
+    'sort': 'votes',
+    'order': 'desc',
+    'fromdate': '2021-09-06',
+    'tagged': 'python',
+    'min': 6
 
 }
-
 
 r = requests.get('https://api.stackexchange.com/2.3/questions', params)
 

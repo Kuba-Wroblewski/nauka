@@ -8,6 +8,7 @@ Except jeśli tak to wykonuje to co jest zawarte w tej akcji.
 
 """
 
+
 # 1 możliwkość wykonania.
 def OpenYourFile():
     anser_user = input("Podaj nazwę pliku, jaki chcesz otworzyć...\n")
@@ -18,6 +19,7 @@ def OpenYourFile():
                 return result
     except FileNotFoundError:
         print("Nie ma takiego pliku:", anser_user)
+
 
 print(OpenYourFile())
 # imionatest.txt

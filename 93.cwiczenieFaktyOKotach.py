@@ -20,10 +20,9 @@ while True:
 2 - Photo
 3 - Exit program\n"""))
 
-
     if odpowiedz == menu.Facts:
 
-        params = {'number' : 5}
+        params = {'number': 5}
         r = requests.get('https://dog-facts-api.herokuapp.com/api/v1/resources/dogs', params)
 
         try:
@@ -51,4 +50,4 @@ while True:
         print('Exit program')
         break
     else:
-        print('Your choice is not correct. choose one of thre options from Menu') 
+        print('Your choice is not correct. choose one of thre options from Menu')

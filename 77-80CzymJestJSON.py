@@ -27,11 +27,10 @@ Ezmae Hull,
 Athena Frost,
 Arkadiusz Marx"""]
 
+# Zapisuje do JSON  w postaci stringowej
 encodeImiona = json.dumps(imiona)
 print(encodeImiona)
-# Zapisuje do JSON  w postaci stringowej
 
-
+# zapisuje dane do pliku w postaci JSON
 with open("sample.json", "w", encoding="UTF-8") as file:
     json.dump(imiona, file, ensure_ascii=False)
-# zapisuje dane do pliku w postaci JSON

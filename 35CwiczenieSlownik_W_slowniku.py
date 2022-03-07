@@ -38,9 +38,9 @@ for dictionery in people2:
         print(key, ":", dictionery[key])
 
 ratings1 = {
-            "Arkadiusz": (2,1,2,3,2,3),
-            "Agnieszka": (4,2,1,3,4)
-           }
+    "Arkadiusz": (2, 1, 2, 3, 2, 3),
+    "Agnieszka": (4, 2, 1, 3, 4)
+}
 
 # aby wypisać klucze ze słownika
 for key in ratings1:

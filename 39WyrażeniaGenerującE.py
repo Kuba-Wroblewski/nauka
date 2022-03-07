@@ -7,7 +7,6 @@ evenNumbers = [element
                if (element % 2 == 0)
                ]
 
-
 evenNumbersGenerator = (element ** 2
                         for element in range(101)
                         )
@@ -17,7 +16,6 @@ Generator - pozwala na generowanie, tworzenie, wyciąganie poszczególnych eleme
 
 print(evenNumbers)
 print(sum(evenNumbersGenerator))
-
 
 for item in evenNumbersGenerator:
     print(item)

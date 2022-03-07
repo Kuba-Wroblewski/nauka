@@ -11,11 +11,9 @@ print("Wynik dodawania liczb to:", wynik)
 
 """
 
-
 for i in range(200):
     if (i % 5 == 0 and i % 7 == 1):
         print("Liczba", i, " jest podzielna przez 5 i nie jest podzielna przez 7")
-
 
 # i % 5 == 0 Czyli: jeśli liczba jest podzielna przez 5 to wypadnie nam 0 jeśli nie jest
 # to wypadnie nam 1 np. 5%5 = 0, 4%5 = 4

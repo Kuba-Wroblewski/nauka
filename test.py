@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 
 import time
+
+
 # napisz funkcje która będzie sprawdzała czy jakis element znajduje sie w kontenerze.
 # jesli sie znajduje funkcja ma zwrócić tak jak sie nie znajduje to ma wyswietlic nie i sprawdz co jest szybsze.
+
 
 def function_performance(func, how_many_times=1, **arg):
     suma = 0
@@ -15,8 +18,10 @@ def function_performance(func, how_many_times=1, **arg):
         suma += end - start
     return suma
 
+
 setContainer = {i for i in range(1000 + 1)}
 listaContainer = [i for i in range(1000 + 1)]
+
 
 def find_element(liczba_szukana, container):
     if liczba_szukana in container:
@@ -24,11 +29,10 @@ def find_element(liczba_szukana, container):
     else:
         return False
 
+
 setContainer = {i for i in range(1000 + 1)}
 listaContainer = [i for i in range(1000 + 1)]
-
 
 print(function_performance(find_element, 1000, liczba_szukana=10, container=setContainer))
 # print(function_performance(find_element, 1000, 10, setContainer))
 # print(function_performance(find_element, 10, setContainer, how_many_times=1000))
-

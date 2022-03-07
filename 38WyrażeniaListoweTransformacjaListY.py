@@ -5,7 +5,7 @@ liczby = [1, 2, 3, 4, 5, 6]
 # Moja próba aby z listy zrobic drugą liste poprzez potegowanie każdej liczby z listy
 liczby2 = []
 for liczba in liczby:
-    x = (liczba**2)
+    x = (liczba ** 2)
     liczby2.append(x)
 if (len(liczby)) == (len(liczby2)):
     print(liczby2, "\n")
@@ -13,7 +13,7 @@ if (len(liczby)) == (len(liczby2)):
 #  Przykład wykładowcy jak on to rozwiązał troche lepiej :)
 potegiDwojki = []
 for element in liczby:
-    potegiDwojki.append(element**2)
+    potegiDwojki.append(element ** 2)
     print(potegiDwojki)
 
 #  Przykład przez trenera na liczbach parzystych
@@ -24,10 +24,10 @@ for element in liczby:
         print(liczbyParzyste)
 
 # Przykłąd ponizej robi dokładnie to samo co przykłady powyżej
-potegiDwojki2 = [element**2
+potegiDwojki2 = [element ** 2
                  for element in liczby
                  ]
-print("\n",potegiDwojki2)
+print("\n", potegiDwojki2)
 
 #  Przykłąd jak powyżej z liczbą parzysta ale krótszy.
 LiczbyParzyste = [element
@@ -35,4 +35,5 @@ LiczbyParzyste = [element
                   if (element % 2 == 0)
                   ]
 print(LiczbyParzyste)
-# wyrazenie listowne jest to formuła które zastępuje w elegantszy sposób jakąs pętle która działą na listach w taki sposób jak tutaj.
+# wyrazenie listowne jest to formuła które zastępuje w elegantszy
+# sposób jakąs pętle która działą na listach w taki sposób jak tutaj.

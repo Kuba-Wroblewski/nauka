@@ -34,7 +34,7 @@ import random
 
 winBox = ["You win a BOX", "You not win a BOX"]
 listBox = ["zielona", "pomaranczowa", "fioletowa", "złota (legendarna)"]
-listCash = {"zielona":1000, "pomaranczowa":4000, "fioletowa":9000, "złota":16000}
+listCash = {"zielona": 1000, "pomaranczowa": 4000, "fioletowa": 9000, "złota": 16000}
 
 x = 0
 piggybank = []
@@ -49,9 +49,11 @@ while x < 5:
         print("Error argument choice - please check your choice")
         continue
 
+
     def win_or_not_win_box():
         chancetowin = random.choices(winBox, [60, 40])
         return chancetowin
+
 
     if choice == 1 or 2 or 3:
         win = (win_or_not_win_box())

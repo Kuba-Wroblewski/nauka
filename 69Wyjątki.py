@@ -11,12 +11,12 @@ Np. błędach.
 """
 
 try:
-    file = open("plik_testowy", "w")   #UCHWYT HANDLE
+    file = open("plik_testowy", "w")  # UCHWYT HANDLE
     file.write("sample")
     tab = [15, 45]
     print(tab[1])
     file.write("tab[0]")
-    print(0/0)
+    print(0 / 0)
     a = 5
     file.write("\nsample")
     file.write("\nnosz")

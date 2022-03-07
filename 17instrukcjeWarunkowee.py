@@ -14,17 +14,16 @@ wybór = input("* - mnożenie, / - dzielenie, + - dodać, - - odejmować: ")
 a = int(input("Podaj wartość dla pierwszej liczby\n"))
 b = int(input("Podaj wartość dla drugiej liczby\n"))
 
-if (wybór == "*"):
+if wybór == "*":
     print(a * b)
-elif (wybór == "/"):
-    if (b == 0):
+elif wybór == "/":
+    if b == 0:
         print("Cholero nie mnóż przez zero")
     else:
         print(a / b)
-elif (wybór == "+"):
-    print( a + b)
-elif (wybór == "-" or "-"):
+elif wybór == "+":
+    print(a + b)
+elif wybór == "-" or "-":
     print(a - b)
 else:
     print("nie wybrałeś żadnego wyboru")
-    

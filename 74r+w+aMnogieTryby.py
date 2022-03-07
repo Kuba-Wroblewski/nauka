@@ -16,10 +16,9 @@ jeśli plik nie istaniał stworzy go. Wiec jak chcesz go przeczytac postaw sie n
 
 """
 
-
 with open("plik_testowy2", "a+") as file:
-   file.write("Tak")
-   file.seek(0)
-   print(file.readline())
-   print(file.tell())
-   file.write("[Go, Go, niet]")
+    file.write("Tak")
+    file.seek(0)
+    print(file.readline())
+    print(file.tell())
+    file.write("[Go, Go, niet]")

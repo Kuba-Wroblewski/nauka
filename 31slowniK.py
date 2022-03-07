@@ -10,15 +10,15 @@ print(pokoje)
 
 pokoje.update({40: "Jan Kowalski"})
 print(pokoje)
-del(pokoje[40])
+del (pokoje[40])
 print(pokoje)
 print(len(pokoje))
 
-lista = { "kupic": "makaron", 2: "auto"}
+lista = {"kupic": "makaron", 2: "auto"}
 
 print(lista["kupic"])
 lista.update({"kupi": "makaron"})
-del(lista[2])
+del (lista[2])
 lista.update({2: "Auto"})
 
 print(lista)

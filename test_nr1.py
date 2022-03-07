@@ -3,22 +3,22 @@ import random
 from enum import IntEnum
 from enum import Enum
 
-
-zdarzenie = IntEnum('zdarzenie',('Skrzynia Nic'))
-prawdopodobienstwoZdarzenia = {zdarzenie.Skrzynia:0.6, zdarzenie.Nic:0.4}
+zdarzenie = IntEnum('zdarzenie', ('Skrzynia Nic'))
+prawdopodobienstwoZdarzenia = {zdarzenie.Skrzynia: 0.6, zdarzenie.Nic: 0.4}
 slownikZdarzen = list(prawdopodobienstwoZdarzenia.keys())
 slownikPrawdopodobienstwaZdarzenia = list(prawdopodobienstwoZdarzenia.values())
 
-kolorSkrzyni = Enum('kolor',{'Zielona':'Green', 'Pomaranczowa':'Orange', 'Fioletowa':'Purple', 'Zlota':'Gold'})
-prawdopodobienstwoKolorSkrzyni = {kolorSkrzyni.Zielona:0.75, 
-                                kolorSkrzyni.Pomaranczowa:0.2, 
-                                kolorSkrzyni.Fioletowa:0.04, 
-                                kolorSkrzyni.Zlota:0.01}
+kolorSkrzyni = Enum('kolor', {'Zielona': 'Green', 'Pomaranczowa': 'Orange', 'Fioletowa': 'Purple', 'Zlota': 'Gold'})
+prawdopodobienstwoKolorSkrzyni = {kolorSkrzyni.Zielona: 0.75,
+                                  kolorSkrzyni.Pomaranczowa: 0.2,
+                                  kolorSkrzyni.Fioletowa: 0.04,
+                                  kolorSkrzyni.Zlota: 0.01}
 slownikKolorSkrzyni = list(prawdopodobienstwoKolorSkrzyni.keys())
 slownikPrawdopodobienstwoKolorSkrzyni = list(prawdopodobienstwoKolorSkrzyni.values())
 
-zdobyteZlotoZeSkrzyni = {slownikKolorSkrzyni[nagroda]:(nagroda + 1)* (nagroda + 1) * 1000 
-                        for nagroda in range(len(slownikKolorSkrzyni))}
+zdobyteZlotoZeSkrzyni = {slownikKolorSkrzyni[nagroda]: (nagroda + 1) * (nagroda + 1) * 1000
+                         for nagroda in range(len(slownikKolorSkrzyni))}
+
 
 def przyblizonaWartoscZlota(zloto):
     nizszaWartosc = zloto - 0.1 * zloto
@@ -43,7 +43,7 @@ while dlugoscGry > 0:
             zdobyteZlotoWGrze += zdobyteZloto
         else:
             print('Nie stety nie udało ci się nic zdobyć')
-    else:  
+    else:
         print('W tej grze możesz isc tylko na wprost')
         continue
     dlugoscGry -= 1

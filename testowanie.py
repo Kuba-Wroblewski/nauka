@@ -13,13 +13,14 @@ def sumuj_do(liczba):
 
 def sumuj_do2(liczba):
     return sum([
-    liczba
-    for liczba in range(1, liczba + 1)
+        liczba
+        for liczba in range(1, liczba + 1)
     ])
 
 
 def sumuj_do3(liczba):
     return (1 + liczba) / 2 * liczba
+
 
 # start = time.perf_counter()
 # print(sumuj_do(int(input('\nPrzykład 1,\nPodaj jakąś liczbe dodatnią...'))))
@@ -48,7 +49,7 @@ def function_performance(func, arg, how_many_times=1):
 
 def show_mesage(liczba):
     contener = 0
-    for liczba in range(1, liczba +1):
+    for liczba in range(1, liczba + 1):
         contener += liczba
     print(contener)
 
@@ -63,5 +64,6 @@ def show_mesage(liczba):
 def greet(name, message, separator=" "):
     print(message, name, sep=separator)
 
+
 greet(name='Kuba', message='Witajcie', separator="\n")
-greet('Just', 'heja')
+greet('Just', 'hello')

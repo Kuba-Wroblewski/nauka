@@ -13,7 +13,7 @@ while x == 1:
         definicja = input("Podaj definicje: ")
         definicje[klucz] = definicja
         print("Pomyślnie dodana definicja")
-        print(definicje,"\n")
+        print(definicje, "\n")
 
     elif (wybor == "2"):
         if definicje.__len__() == 0:
@@ -21,7 +21,7 @@ while x == 1:
             x = 1
         else:
             print(definicje)
-            print("Mamy",len(definicje),"definicjie")
+            print("Mamy", len(definicje), "definicjie")
             wybor2 = input("Podaj nazwe definicji jakiej szukasz...?\n")
             print(definicje[wybor2])
             if wybor2 in definicje:
@@ -40,7 +40,6 @@ while x == 1:
         x = 0
     else:
         print("Podałes coś z poza zakresu\n")
-
 
 """
 definicje = {}
@@ -83,7 +82,6 @@ while(True):
     elif (wybor == "5"):
         break
 """
-
 
 """
 # moj program numer 2

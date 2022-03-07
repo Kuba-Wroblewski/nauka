@@ -39,9 +39,9 @@ listaGosci.add(("Piotr", 35, "mężczyzna", 3456465484))
 
 print(listaGosci & listaGosci2) # pokazało nam jaki element sie powtarza
 print(listaGosci | listaGosci2) # zsumowało listy gosci ale bez powtórzeń
-for imie, wiek, płeć, tel in listaGosci:
+for imie, wiek, plec, tel in listaGosci:
     print("Imię: ", imie)
     print("wiek: ", wiek)
-    print("płeć: ", płeć)
+    print("płeć: ", plec)
     print("tel: ", tel)
     print("\n")

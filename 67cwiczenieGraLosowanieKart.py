@@ -2,21 +2,20 @@
 
 import random
 
-
 cardList = ["9", "9", "9", "9",
-             "10", "10", "10", "10",
-             "Jack", "Jack", "Jack", "Jack",
-             "King", "King", "King", "King",
-             "Queen", "Queen", "Queen", "Queen",
-             "Ace", "Ace", "Ace", "Ace",
-             "Joker", "Joker"]
-
+            "10", "10", "10", "10",
+            "Jack", "Jack", "Jack", "Jack",
+            "King", "King", "King", "King",
+            "Queen", "Queen", "Queen", "Queen",
+            "Ace", "Ace", "Ace", "Ace",
+            "Joker", "Joker"]
 
 random.shuffle(cardList)
 
 cardlist_gracz1 = []
 cardlist_gracz2 = []
 cardlist_gracz3 = []
+
 
 def rozdawanie_kart():
     print(len(cardList))
@@ -28,6 +27,7 @@ def rozdawanie_kart():
     print("Karty Gracza 1cardlist_gracz1", cardlist_gracz1)
     print("Karty Gracza 1cardlist_gracz2", cardlist_gracz2)
     print("Karty Gracza 1cardlist_gracz3", cardlist_gracz3)
+
 
 rozdawanie_kart()
 print(len(cardList))

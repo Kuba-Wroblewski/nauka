@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import time
+
 time.sleep(1)
 print('START')
 print('')
@@ -9,7 +10,6 @@ print('Wpisz swoje wynagrodzenie za ubiegły rok.')
 print('Sprawdzimy jaki podatek zostanie ci nałożony')
 
 liczba = int(input('Wpisz wartość brutto...'))
-
 
 if liczba >= 30000 and liczba < 78000:
     x = 0.19
